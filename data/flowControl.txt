@@ -1,0 +1,6 @@
+Implemented a heat map generator based on computer vision techniques to stochastically estimate the 
+most visited areas in an indoor space with a monocular camera. A feature tracker method was used to 
+estimate the average flow of persons and a deep convolutional neural network was employed to obtain 
+the segmentation of the floor in the scene. This information was merge together to ​gather relevant 
+information about the people habits in shopping centers or crowded areas (Implemented in Python/
+Linux)

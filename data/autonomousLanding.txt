@@ -1,0 +1,11 @@
+My BEng degree project addressed the problem of the autonomous landing of a UAV 
+with a landing platform located on the top of a ground vehicle. The project 
+utilized vision-based techniques to detect the landing platform, a Kalman 
+filter was tailored for the tracking phase and finally, a PID controller sent 
+control commands to the flight controller of the UAV to land properly on the 
+platform. Rigorous assessments were conducted through the simulation of the 
+whole robotic stack with ROS and gazebo in the software in the loop provided by 
+PX4. Ultimately, the system was tested in a custom DJI F-450 and embedded in a 
+Odroid XU4. The system demonstrates a satisfactory performance and was able to 
+land with a mean error of ten centimeters from the center of the landing 
+platform (Implemented in Python, C++/Linux).

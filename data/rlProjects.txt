@@ -1,0 +1,15 @@
+Trained a lunar lander in a simulated environment with Reinforcement Learning.  The agent was 
+implemented with the Expected-Sarsa algorithm and used a Neural networkfor for action-values 
+approximation. The algorithm was capable to do planning steps with experience replay and learn a 
+policy for the landing of the agent. Thorughout the specialization I implemented different 
+projects, some of those are listed below.
+
+    * Solved a Gridworld city with Dynamic programming to find an optimal policie.
+
+    * Implemented a Dyna-Q and Dyna-Q+ algorithms in a changing maze environment to assess the 
+    performance of planning methods in RL. 
+
+    * Implemented an Average Reward Softmax Actor-Critic algorithm using Tile-coding to solve the 
+    Pendulum Swing-Up continuous problem.
+
+    * Solved the Mountain car and Lunar Lander problems.

@@ -1,0 +1,5 @@
+Implemented a low cost Calendula flower classification system with Tensorflow, Android Studio and 
+Arduino. The system used a deep convolutional neural network inception v3 trained with different 
+Calendula flowers. When the system detected a Calendula flower, it sent a signal to an Arduino 
+board and moved a servomotor to a specific point which allowed the correct classification of the 
+flowers through a transportation band (Implemented in C, Python/Linux).

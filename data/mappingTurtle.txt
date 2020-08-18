@@ -1,0 +1,5 @@
+Equipping robotic systems with novel localization and navigation stacks is crucial for autonomous 
+navigation. A localization and mapping system (laser-based SLAM) for a turtlebot2 in indoors was 
+simulated. The system was capable to accurately localize the robot in a previously mapped 
+environment and subsequently navigate to a specific position in an occupancy grid map (Implemented 
+in C++/Linux)​.

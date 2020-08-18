@@ -1,0 +1,7 @@
+Aerial robotic applications need to be endowed with systems capable to accurately locate objects of 
+interest to perform specific tasks at hand. I Developed an embedded vision-based landing platform 
+detection and tracking system with ROS and OpenCV. The system extended the capabilities of a 
+SURF-based feature detector-descriptor that makes detections of a landing pad alongside a Kalman 
+filter-based estimation module. The system demonstrated a considerable improvement over 
+only-detector methods, diminishing the detection error and providing accurate estimations of the 
+landing pad position (Implemented in C++/Linux).

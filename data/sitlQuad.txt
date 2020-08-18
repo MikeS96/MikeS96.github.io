@@ -1,0 +1,5 @@
+Simulated an autonomous landing system for a UAV with Gazebo, ROS and the Software in the loop 
+provided by PX4. The project consisted in the development of different packages in C++ and Python 
+which allowed the assessment of an autonomous landing system. This robotics simulation allowed the 
+thoroughly development and evaluation of a landing pipeline for a UAV (Implemented in Python, C++/
+Linux).

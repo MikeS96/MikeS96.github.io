@@ -1,0 +1,6 @@
+Mathematical modelling of unmanned groundvehicles (UGV) is a well studied problem in robotics and 
+essential for the control of a robot. Developed a teleoperation system for a car-like robot. The 
+system received velocities in the local coordinate frame of the robot and through the inverse 
+kinematics model of the vehicle these velocity commands were transformed to wheels’ speed and sent 
+to the vehicle’s motors. This project was embedded in a Raspberry Pi3 to allow the remote control 
+of the vehicle with a host computer through WIFI (Implemented in C/Linux). 

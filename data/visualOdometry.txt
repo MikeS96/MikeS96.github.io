@@ -1,0 +1,7 @@
+Implemented Stereo Visual Odometry and Visual Inertial Odometry pipelines to estimate the pose of a quad-rotor.  
+The system works by taking subsequent image pairs and matching features throughout the test. Once those features 
+are obtained, 3d-points coordinates were retrieved with the depth map of the images and the extrinsic camera 
+calibration  matrix. Finally, the trajectory is estimated using 3D-2D Perspective-n-Point (PNP). As an additional 
+step, the VO trajectory was used with the IMU data in an Error-State Extended Kalman Filter to estimate the pose 
+even when most of the VO observations were dropped. Both VO and VIO showed good results estimating the trajectory 
+of the UAV (Implemented in Python/Linux).

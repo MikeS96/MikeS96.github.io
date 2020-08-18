@@ -1,0 +1,21 @@
+ ​This work involved four capstone projects in the area of self-driving cars. Topics such as 
+ wheeled-robot mathematical modelling through dynamical modelling (tire model), lateral and 
+ longitudinal control, state estimation with Kalman filters, visual perception and motion planning 
+ were addressed. Most of the projects were tested in the Carla Simulator to assess performance. A 
+ description of the projects developed are presented below.
+
+    * Control of a car-like robot through a longitudinal and lateral controller. The longitudinal 
+    controller was implemented with a PID and the lateral controller was a cross-track error 
+    controller. 
+    
+    * Implementation of an error state extended Kalman Filter for the estimation of the trajectory 
+    of a vehicle. The filter fused information from a GNSS and IMU alongside the dynamic model of 
+    the vehicle to produce an accurate estimation of its trajectory on the space.
+    
+    * Robotics perception stack which detected the drivable space of the vehicle through image 
+    segmentation. Canny edge detector was used to detect the lines of the road and a depth 
+    representation of the scene was employed to estimate the distance-to-objects in the road and 
+    avoid collision using only image-based methods.
+    
+    * Implemented a navigation stack in the Carla simulator with the use of grid world 
+    representations  and state machines for a simple navigation strategy.
