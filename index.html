@@ -112,8 +112,8 @@
               </a>
               <br>
               <strong>Miguel Saavedra-Ruiz</strong>,
-              <a href="http://www.seanfanello.it/">Ana Pinto</a>,
-              <a href="https://research.google/people/105312/">Victor Romero-Cano</a>,
+              <a href="https://www.linkedin.com/in/ana-maria-pinto-b380b017a/">Ana Pinto</a>,
+              <a href="https://scholar.google.com.au/citations?user=x3M1JlAAAAAJ&hl=en">Victor Romero-Cano</a>
               <br>
               <em>CCRA</em>, 2018 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font> 
               <br>
@@ -124,52 +124,79 @@
               <p>Object Detection and tracking pipelines to detect a landing pad on the ground from a UAV.</p>
             </td>
           </tr> 
-    
-          <tr onmouseout="lighthouse_stop()" onmouseover="lighthouse_start()">
+
+          <tr onmouseout="dals_stop()" onmouseover="dals_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='lh_image'><video width=100% height=100% muted autoplay loop>
-                <source src="images/rings_crop.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/rings.png' width="160">
+                <div class="two" id='dals_image'>
+                  <img src='images/gazebo_dron_after.jpg' width="180"></div>
+                <img src='images/gazebo_dron_before.png' width="180">
               </div>
               <script type="text/javascript">
-                function lighthouse_start() {
-                  document.getElementById('lh_image').style.opacity = "1";
+                function dals_start() {
+                  document.getElementById('dals_image').style.opacity = "1";
                 }
 
-                function lighthouse_stop() {
-                  document.getElementById('lh_image').style.opacity = "0";
+                function dals_stop() {
+                  document.getElementById('dals_image').style.opacity = "0";
                 }
-                lighthouse_stop()
+                dals_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://people.eecs.berkeley.edu/~pratul/lighthouse/">
-                <papertitle>Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination</papertitle>
+              <a href="https://github.com/MikeS96/autonomous_landing_uav">
+                <papertitle>Development of an autonomous landing system for an unmanned aerial vehicle on a terrestrial vehicle</papertitle>
               </a>
               <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
-              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://research.google/people/RichardTucker/">Richard Tucker</a>,
-              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
+              <strong>Miguel Saavedra-Ruiz</strong>,
+              <a href="https://www.linkedin.com/in/ana-maria-pinto-b380b017a/">Ana Pinto</a>,
+              <a href="https://scholar.google.com.au/citations?user=x3M1JlAAAAAJ&hl=en">Victor Romero-Cano</a>
               <br>
-        <em>CVPR</em>, 2020  
+              <em>Redcolsi</em>, 2018 &nbsp <font color="red"><strong>(Poster Presentation)</strong></font> 
               <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/lighthouse/">project page</a>
-        /
-              <a href="https://github.com/pratulsrinivasan/lighthouse">code</a>
-        /
-              <a href="https://arxiv.org/abs/2003.08367">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=KsiZpUFPqIU">video</a>
+              <a href="https://github.com/MikeS96/autonomous_landing_uav">code</a> /
+              <a href="data/RedColsiPasto.pdf">poster</a> 
               <p></p>
-              <p>We predict a volume from an input stereo pair that can be used to calculate incident lighting at any 3D point within a scene.</p>
+              <p>Autonomous landing system for a UAV on a terrestrial vehicle using robotics vision and control.</p>
             </td>
-          </tr>  
+          </tr> 
+
+          <tr onmouseout="ldp_stop()" onmouseover="ldp_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ldp_image'>
+                  <img src='images/localization_after.png' width="180"></div>
+                <img src='images/localization_before.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function ldp_start() {
+                  document.getElementById('ldp_image').style.opacity = "1";
+                }
+
+                function ldp_stop() {
+                  document.getElementById('ldp_image').style.opacity = "0";
+                }
+                ldp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/MikeS96/autonomous_landing_uav/tree/master/object_detector">
+                <papertitle>Localization of a landing platform for a UAV</papertitle>
+              </a>
+              <br>
+              <strong>Miguel Saavedra-Ruiz</strong>,
+              <a href="http://www.seanfanello.it/">Ana Pinto</a>,
+              <a href="https://research.google/people/105312/">Victor Romero-Cano</a>,
+              <br>
+              <font color="red"><strong>(Poster Presentation)</strong></font> 
+              <br>
+              <a href="https://github.com/MikeS96/autonomous_landing_uav/tree/master/object_detector">code</a> /
+              <a href="data/pendonUAO2018.pdf">poster</a> 
+              <p></p>
+              <p>Localization of a landing pad located at the top of a ground vehicle with a UAV.</p>
+            </td>
+          </tr> 
+    
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
@@ -203,7 +230,7 @@
                 <strong>Miguel Saavedra-Ruiz</strong>
                 <br>
                 <br>
-                <a href="https://github.com/MikeS96/vio_quadrotor">code</a> /
+                <a href="https://github.com/MikeS96/vio_quadrotor">code</a> 
                 <p></p>
                 <p>Visual Odometry and Visuatl Inertial Odometry to localize a quad-rotor in a Gazebo-based simulated environment.</p>
               </td>
