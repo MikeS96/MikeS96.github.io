@@ -241,7 +241,7 @@
                 <a href="https://github.com/MikeS96/robotics_software_nd">code</a> /
                 <a href="data/roboticsND.txt">description</a> 
                 <p></p>
-                <p>Stereo Visual Odometry and Visual Inertial Odometry pipelines to estimate the pose of a quad-rotor.</p>
+                <p>Robot localization, Mapping, SLAM, path planning and navigation.</p>
               </td>
             </tr> 
 
@@ -310,6 +310,39 @@
               </td>
             </tr> 
 
+            <tr onmouseout="rlSpe_stop()" onmouseover="rlSpe_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='rlSpe_image'>
+                    <img src='images/lunar_lander_after.gif' width="160"></div>
+                  <img src='images/lunar_lander_before.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function rlSpe_start() {
+                    document.getElementById('rlSpe_image').style.opacity = "1";
+                  }
+  
+                  function crlSpe_stop() {
+                    document.getElementById('rlSpe_image').style.opacity = "0";
+                  }
+                  rlSpe_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/MikeS96/rl_openai">
+                  <papertitle>​Reinforcement Learning Specialization Projects</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <br>
+                <a href="https://github.com/MikeS96/rl_openai">code</a> /
+                <a href="https://www.youtube.com/watch?v=rJE_hfkvKvk&feature=youtu.be">video</a> /
+                <a href="data/rlProjects.txt">description</a> 
+                <p></p>
+                <p> Lunar Lander, Mountain Car and Pendulum classical control tasks solved using RL.</p>
+              </td>
+            </tr> 
+
             <tr onmouseout="teleop_stop()" onmouseover="teleop_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -370,9 +403,42 @@
                 <br>
                 <a href="data/slidesturtle.pdf">slides</a> /
                 <a href="data/finalreport.pdf">report</a> /
-                <a href="data/teleopCar.txt">description</a> 
+                <a href="data/mappingTurtle.txt">description</a> 
                 <p></p>
                 <p> Simulation of a localization and mapping system (laser-based SLAM) for a turtlebot2 in indoors.</p>
+              </td>
+            </tr> 
+
+            <tr onmouseout="carsSpe_stop()" onmouseover="carsSpe_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='carsSpe_image'>
+                    <img src='images/cars_after.png' width="160"></div>
+                  <img src='images/cars_before.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function carsSpe_start() {
+                    document.getElementById('carsSpe_image').style.opacity = "1";
+                  }
+  
+                  function carsSpe_stop() {
+                    document.getElementById('carsSpe_image').style.opacity = "0";
+                  }
+                  carsSpe_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.youtube.com/watch?v=f-k9wR0Ty8o">
+                  <papertitle>​Self-Driving Cars Specialization Projects</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <br>
+                <a href="https://www.youtube.com/watch?v=f-k9wR0Ty8o">video1</a> /
+                <a href="https://www.youtube.com/watch?v=1I6UJQyJovs">video2</a> /
+                <a href="data/selfDrivingCars.txt">description</a> 
+                <p></p>
+                <p> Wheeled-robot mathematical modelling through dynamical modelling (tire model), lateral and longitudinal control, state estimation with Kalman filters, visual perception and motion planning for self-driving vehicles</p>
               </td>
             </tr> 
 
@@ -435,72 +501,6 @@
                 <a href="data/flowControl.txt">description</a> 
                 <p></p>
                 <p> Heat map generator based on computer vision techniques to stochastically estimate the most visited areas in an indoor space with a monocular camera.</p>
-              </td>
-            </tr> 
-
-            <tr onmouseout="carsSpe_stop()" onmouseover="carsSpe_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='carsSpe_image'>
-                    <img src='images/cars_after.png' width="160"></div>
-                  <img src='images/cars_before.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function carsSpe_start() {
-                    document.getElementById('carsSpe_image').style.opacity = "1";
-                  }
-  
-                  function carsSpe_stop() {
-                    document.getElementById('carsSpe_image').style.opacity = "0";
-                  }
-                  carsSpe_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://www.youtube.com/watch?v=f-k9wR0Ty8o">
-                  <papertitle>​Self-Driving Cars Specialization Projects</papertitle>
-                </a>
-                <br>
-                <strong>Miguel Saavedra-Ruiz</strong>
-                <br>
-                <a href="https://www.youtube.com/watch?v=f-k9wR0Ty8o">video1</a> /
-                <a href="https://www.youtube.com/watch?v=1I6UJQyJovs">video2</a> /
-                <a href="data/selfDrivingCars.txt">description</a> 
-                <p></p>
-                <p> Wheeled-robot mathematical modelling through dynamical modelling (tire model), lateral and longitudinal control, state estimation with Kalman filters, visual perception and motion planning for self-driving vehicles</p>
-              </td>
-            </tr> 
-
-            <tr onmouseout="rlSpe_stop()" onmouseover="rlSpe_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='rlSpe_image'>
-                    <img src='images/lunar_lander_after.gif' width="160"></div>
-                  <img src='images/lunar_lander_before.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function rlSpe_start() {
-                    document.getElementById('rlSpe_image').style.opacity = "1";
-                  }
-  
-                  function crlSpe_stop() {
-                    document.getElementById('rlSpe_image').style.opacity = "0";
-                  }
-                  rlSpe_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://github.com/MikeS96/rl_openai">
-                  <papertitle>​Reinforcement Learning Specialization Projects</papertitle>
-                </a>
-                <br>
-                <strong>Miguel Saavedra-Ruiz</strong>
-                <br>
-                <a href="https://github.com/MikeS96/rl_openai">code</a> /
-                <a href="https://www.youtube.com/watch?v=rJE_hfkvKvk&feature=youtu.be">video</a> /
-                <a href="data/rlProjects.txt">description</a> 
-                <p></p>
-                <p> Lunar Lander, Mountain Car and Pendulum classical control tasks solved using RL.</p>
               </td>
             </tr> 
 

@@ -1,4 +1,4 @@
-Automatic license plate recog-nition (LPR) is indispensable for the admission and flow control of 
+Automatic license plate recognition (LPR) is indispensable for the admission and flow control of 
 vehicles into parking lots orcondominiums.  Generally, these systems are based on classic computer 
 vision techniques owing to their processing speed, however, these approaches can lead to inaccurate 
 detections and vague performance on non-ideal environmental conditions. My work tried to surpass 
