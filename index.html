@@ -44,7 +44,7 @@
                 <a href="https://scholar.google.com/citations?user=9OnaQ-MAAAAJ&hl=en&authuser=1">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/miguel-a-saavedra-ruiz">Linkedin</a> &nbsp/&nbsp
                 <a href="mailto:mguel.saavedra@uao.edu.co">Email</a> &nbsp/&nbsp
-                <a href="data/JonBarron-CV.pdf">CV</a>
+                <a href="data/MiguelSaavedra_CV.pdf">CV</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -156,6 +156,8 @@
               <br>
               <a href="https://github.com/MikeS96/autonomous_landing_uav">code</a> /
               <a href="data/RedColsiPasto.pdf">poster</a> 
+              <a href="https://red.uao.edu.co/bitstream/10614/10754/5/T08388.pdf">Thesis</a> 
+              <a href="https://www.youtube.com/watch?v=2NWR9Otdz-s&feature=youtu.be">video</a>
               <p></p>
               <p>Autonomous landing system for a UAV on a terrestrial vehicle using robotics vision and control.</p>
             </td>
@@ -196,6 +198,9 @@
               <p>Localization of a landing pad located at the top of a ground vehicle with a UAV.</p>
             </td>
           </tr> 
+
+        </tbody></table>
+        <hr>
     
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -229,59 +234,261 @@
                 <br>
                 <strong>Miguel Saavedra-Ruiz</strong>
                 <br>
-                <br>
                 <a href="https://github.com/MikeS96/vio_quadrotor">code</a> 
                 <p></p>
-                <p>Visual Odometry and Visuatl Inertial Odometry to localize a quad-rotor in a Gazebo-based simulated environment.</p>
+                <p>Stereo Visual Odometry and Visual Inertial Odometry pipelines to estimate the pose of a quad-rotor.</p>
               </td>
             </tr> 
 
-      
-            <tr onmouseout="vio_stop()" onmouseover="vio_start()">
+            <tr onmouseout="sitl_stop()" onmouseover="sitl_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='vio_image'><video width=100% height=100% muted autoplay loop>
-                  <source src="images/rings_crop.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div>
-                  <img src='images/rings.png' width="160">
+                  <div class="two" id='sitl_image'>
+                    <img src='images/simu_landing_before.png' width="180"></div>
+                  <img src='images/simu_landing_after.png' width="180">
                 </div>
                 <script type="text/javascript">
-                  function lighthouse_start() {
-                    document.getElementById('lh_image').style.opacity = "1";
+                  function sitl_start() {
+                    document.getElementById('sitl_image').style.opacity = "1";
                   }
   
-                  function lighthouse_stop() {
-                    document.getElementById('lh_image').style.opacity = "0";
+                  function sitl_stop() {
+                    document.getElementById('sitl_image').style.opacity = "0";
                   }
-                  lighthouse_stop()
+                  sitl_stop()
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://people.eecs.berkeley.edu/~pratul/lighthouse/">
-                  <papertitle>Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination</papertitle>
+                <a href="https://github.com/MikeS96/autonomous_landing_uav">
+                  <papertitle>Simulation of a landing system for a UAV in Gazebo</papertitle>
                 </a>
                 <br>
-                <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
-                <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
-                <a href="http://matthewtancik.com/">Matthew Tancik</a>,
-                <strong>Jonathan T. Barron</strong>,
-                <a href="https://research.google/people/RichardTucker/">Richard Tucker</a>,
-                <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
+                <strong>Miguel Saavedra-Ruiz</strong>
                 <br>
-          <em>CVPR</em>, 2020  
-                <br>
-                <a href="https://people.eecs.berkeley.edu/~pratul/lighthouse/">project page</a>
-          /
-                <a href="https://github.com/pratulsrinivasan/lighthouse">code</a>
-          /
-                <a href="https://arxiv.org/abs/2003.08367">arXiv</a>
-          /
-                <a href="https://www.youtube.com/watch?v=KsiZpUFPqIU">video</a>
+                <a href="https://github.com/MikeS96/autonomous_landing_uav">code</a> /
+                <a href="https://www.youtube.com/watch?v=41xJj8g8Ce8&feature=youtu.be">video</a>
                 <p></p>
-                <p>We predict a volume from an input stereo pair that can be used to calculate incident lighting at any 3D point within a scene.</p>
+                <p>Simulation of an autonomous landing system for a UAV with Gazebo, ROS and the Software in the loop provided by PX4.</p>
               </td>
-            </tr>  
+            </tr> 
+
+            <tr onmouseout="teleop_stop()" onmouseover="teleop_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='teleop_image'>
+                    <img src='images/teleop_after.png' width="180"></div>
+                  <img src='images/teleop_before.png' width="180">
+                </div>
+                <script type="text/javascript">
+                  function teleop_start() {
+                    document.getElementById('teleop_image').style.opacity = "1";
+                  }
+  
+                  function teleop_stop() {
+                    document.getElementById('teleop_image').style.opacity = "0";
+                  }
+                  teleop_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/MikeS96/autonomous_landing_uav/tree/master/key_teleop">
+                  <papertitle>Teleoperation system for a car-like robot</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <br>
+                <a href="https://github.com/MikeS96/autonomous_landing_uav/tree/master/key_teleop">code</a> /
+                <a href="https://www.youtube.com/watch?v=54QGT7Ud98s&feature=youtu.be">video</a>
+                <p></p>
+                <p> Mathematical modelling of unmanned groundvehicles (UGV) is a well studied problem in robotics and essential for the control of a robot. Developed a teleoperation system for a car-like robot.</p>
+              </td>
+            </tr> 
+
+            <tr onmouseout="mturtle_stop()" onmouseover="mturtle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='mturtle_image'>
+                    <img src='images/map_turtle_after.png' width="180"></div>
+                  <img src='images/map_turtle_before.png' width="180">
+                </div>
+                <script type="text/javascript">
+                  function mturtle_start() {
+                    document.getElementById('mturtle_image').style.opacity = "1";
+                  }
+  
+                  function mturtle_stop() {
+                    document.getElementById('mturtle_image').style.opacity = "0";
+                  }
+                  mturtle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="data/slidesturtle.pdf">
+                  <papertitle>Teleoperation system for a car-like robot</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <br>
+                <a href="data/slidesturtle.pdf">slides</a> /
+                <a href="data/finalreport.pdf">report</a> 
+                <p></p>
+                <p> Equipping robotic systems with novel localization and navigation stacks is crucial for autonomous navigation. A localization and mapping system (laser-based SLAM) for a turtlebot2 in indoors was simulated.</p>
+              </td>
+            </tr> 
+
+            <tr onmouseout="lplate_stop()" onmouseover="lplate_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='lplate_image'>
+                    <img src='images/license_plate_after.png' width="180"></div>
+                  <img src='images/license_plate_before.png' width="180">
+                </div>
+                <script type="text/javascript">
+                  function lplate_start() {
+                    document.getElementById('lplate_image').style.opacity = "1";
+                  }
+  
+                  function lplate_stop() {
+                    document.getElementById('lplate_image').style.opacity = "0";
+                  }
+                  lplate_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <papertitle>​Low-cost license plate recognition system based on CNN</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <p></p>
+                <p> Implemented a low-cost license plate recognition systems using deep learning techniques.</p>
+              </td>
+            </tr> 
+
+            <tr onmouseout="flowc_stop()" onmouseover="flowc_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='flowc_image'>
+                    <img src='images/flow_control_after.png' width="180"></div>
+                  <img src='images/flow_control_before.jpg' width="180">
+                </div>
+                <script type="text/javascript">
+                  function flowc_start() {
+                    document.getElementById('flowc_image').style.opacity = "1";
+                  }
+  
+                  function flowc_stop() {
+                    document.getElementById('flowc_image').style.opacity = "0";
+                  }
+                  flowc_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <papertitle>Flow control with heatmaps in indoors</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <p></p>
+                <p> Implemented a heat map generator based on computer vision techniques to stochastically estimate the most visited areas in an indoor space with a monocular camera. A feature tracker method was used to 
+                  estimate the average flow of persons and a deep convolutional neural network was employed to obtain the segmentation of the floor in the scene. </p>
+              </td>
+            </tr> 
+
+            <tr onmouseout="carsSpe_stop()" onmouseover="carsSpe_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='carsSpe_image'>
+                    <img src='images/cars_after.png' width="180"></div>
+                  <img src='images/cars_before.png' width="180">
+                </div>
+                <script type="text/javascript">
+                  function carsSpe_start() {
+                    document.getElementById('carsSpe_image').style.opacity = "1";
+                  }
+  
+                  function carsSpe_stop() {
+                    document.getElementById('carsSpe_image').style.opacity = "0";
+                  }
+                  carsSpe_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.youtube.com/watch?v=f-k9wR0Ty8o">
+                  <papertitle>​Self-Driving Cars Specialization Projects</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <br>
+                <a href="https://www.youtube.com/watch?v=f-k9wR0Ty8o">video1</a> /
+                <a href="https://www.youtube.com/watch?v=1I6UJQyJovs">video2</a>
+                <p></p>
+                <p> Wheeled-robot mathematical modelling through dynamical modelling (tire model), lateral and longitudinal control, state estimation with Kalman filters, visual perception and motion planning for self-driving cars</p>
+              </td>
+            </tr> 
+
+            <tr onmouseout="rlSpe_stop()" onmouseover="rlSpe_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='rlSpe_image'>
+                    <img src='images/lunar_lander_after.gif' width="180"></div>
+                  <img src='images/lunar_lander_before.png' width="180">
+                </div>
+                <script type="text/javascript">
+                  function rlSpe_start() {
+                    document.getElementById('rlSpe_image').style.opacity = "1";
+                  }
+  
+                  function crlSpe_stop() {
+                    document.getElementById('rlSpe_image').style.opacity = "0";
+                  }
+                  rlSpe_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/MikeS96/rl_openai">
+                  <papertitle>​Reinforcement Learning Specialization Projects</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <br>
+                <a href="https://github.com/MikeS96/rl_openai">code</a> 
+                <p></p>
+                <p> Lunar Lander, Mountain Car and Pendulum classical control tasks solved using RL.</p>
+              </td>
+            </tr> 
+
+            <tr onmouseout="calenF_stop()" onmouseover="calenF_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='calenF_image'>
+                    <img src='images/calendula_after.jpg' width="180"></div>
+                  <img src='images/calendula_after.jpg' width="180">
+                </div>
+                <script type="text/javascript">
+                  function calenF_start() {
+                    document.getElementById('calenF_image').style.opacity = "1";
+                  }
+  
+                  function calenF_stop() {
+                    document.getElementById('calenF_image').style.opacity = "0";
+                  }
+                  calenF_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <papertitle>​Calendula Flower Classification System</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <p></p>
+                <p> Implementation of a low cost Calendula flower classification system with Tensorflow, Android Studio and Arduino. </p>
+              </td>
+            </tr> 
+
+          </tbody></table>
+          <hr>
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -299,12 +506,11 @@
           </td>
         </tr>
         </tbody></table>
-        <hr>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
-                This template was shamelessly stolen from here <a href="https://leonidk.com/">here</a>.
+                This template was shamelessly stolen from here <a href="https://jonbarron.info/">here</a>.
               </p>
             </td>
           </tr>
