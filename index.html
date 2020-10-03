@@ -225,6 +225,38 @@
               <heading>Projects</heading>
             </td>
 
+            <tr onmouseout="ml3d_stop()" onmouseover="ml3d_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ml3d_image'>
+                    <img src='images/3d_after.png' width="160"></div>
+                  <img src='images/3d_before.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function ml3d_start() {
+                    document.getElementById('ml3d_image').style.opacity = "1";
+                  }
+  
+                  function ml3d_stop() {
+                    document.getElementById('ml3d_image').style.opacity = "0";
+                  }
+                  ml3d_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/MikeS96/3d_obj_detection">
+                  <papertitle>3D object detector for vehicles using classic Machine Learning</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>
+                <br>
+                <a href="https://github.com/MikeS96/3d_obj_detection">code</a> /
+                <a href="data/3dMachineLearning.txt">description</a> 
+                <p></p>
+                <p>3D object detection of vehicles in the NuScenes dataset using classic Machine learning such as DBSCAN and SVMs.</p>
+              </td>
+            </tr> 
+
             <tr onmouseout="rsnd_stop()" onmouseover="rsnd_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
