@@ -1,0 +1,16 @@
+3D object detection is a problem that has gained popularity among the research community due to
+its extensiveset of application on autonomous navigation, surveillance and pick-and-place. Most
+of the solutions proposed in the state-of-the-art are based on deep learning techniques and
+present astonishing results in terms of accuracy. Nevertheless, a set of problems inherits from
+this sort of solutions such as the need of enormous tagged datasets, extensive computational 
+resources due to the complexity of the model and most of the time, no real-time inference. 
+This work proposes an end-to-end classic Machine Learning (ML) pipeline to solve the
+3D object detection problem for cars. The proposed method is leveraged on the use of frustum
+region proposals to segment and estimate the parameters of the amodal 3D bouning box. Here we
+do not deal with the problem of 2D object detection as for most of the research community this
+is considered solved with ConvolutionalNeural Networks (CNN).
+
+This task is addressed employing different ML techniques such as RANSAC for road segmentation and
+DBSCAN for clustering. Global features are extracted out of the segmented point cloud using 
+The Ensemble of Shape Functions (ESF). Some feature are engineered through PCA and statistics.
+Finally, the amodal 3D bounding box parameters are estimated through a SVR regressor.
