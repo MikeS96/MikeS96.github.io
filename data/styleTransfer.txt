@@ -1,0 +1,9 @@
+Implementation of Style-Transfer based on the original paper 'A neural algorithm of artistic style'.
+As stated by the authors, style-transfer is 'an artificial system based on a Deep Neural Network
+that creates artistic images of high perceptual quality'. In this work we aimed to replicate the 
+original paper in a Pytorch-based implementation using as backbone a VGG-19 model. The results
+present how the implementation is capable to transfer the desired content and style to a different 
+image and even create an aesthetic result from scratch. 
+
+This work was locally deployed using docker-compose and web sockets in order the create a
+seamlessly implementation of style-transfer with an intuitive GUI.
