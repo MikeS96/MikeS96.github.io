@@ -41,9 +41,11 @@
                 My undergraduate <a href="http://red.uao.edu.co/bitstream/10614/10754/5/T08388.pdf">degree project</a> was entitled "Autonomous landing system for an unmanned aerial vehicle on a terrestrial vehicle"
                 and consisted in the development of the vision and control pipelines to autonomously land a UAV on a ground vehicle. The university granted me the Academic Excellence Award for the highest GPA obtained in the Engineering department.
               </p>
+              <!-- MSc opportunity!!!
               <p>
                 <span class="highlight"><strong>I am looking for an exciting MSc or MASc opportunity in Computer vision, Robotics, AI or RL where I can contribute into these fascinating fields.</strong></span>
               </p>
+              -->
               <p>
                 Email: miguel [dot] saavedra [at] uao [dot] edu [dot] co
               <p style="text-align:center">
@@ -80,7 +82,7 @@
             <heading>News</heading>
             <ul>
               <li> 
-                <font color="red"><strong>[December 2020]</strong></font> I am joining the <a href="https://whaleandjaguar.co/">Whale & Jaguar</a>'s team as a Machine Learning Engineer. 
+                <strong>[December 2020]</strong> I am joining the <a href="https://whaleandjaguar.co/">Whale & Jaguar</a>'s team as a Machine Learning Engineer. 
               </li>
               <li> 
                 <strong>[August 2020]</strong> I have been accepted into the <a href="https://riiaa.org/en/home/">RIIAA</a> online summer school in RL and Bayesian inference as an active track. 
@@ -225,6 +227,41 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <heading>Projects</heading>
             </td>
+
+            <tr onmouseout="style_stop()" onmouseover="style_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='style_image'>
+                    <img src='images/style_after.gif' width="160"></div>
+                  <img src='images/style_before.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function style_start() {
+                    document.getElementById('style_image').style.opacity = "1";
+                  }
+  
+                  function style_stop() {
+                    document.getElementById('style_image').style.opacity = "0";
+                  }
+                  style_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/zestian56/style-transfer">
+                  <papertitle>Style-transfer for the creation of aesthetic images</papertitle>
+                </a>
+                <br>
+                <strong>Miguel Saavedra-Ruiz</strong>,
+                <a href="https://github.com/gsg213">Gustavo Salazar</a>,
+                <a href="https://github.com/zestian56">Sebastian Botero</a>
+                <br>
+                <a href="https://github.com/zestian56/style-transfer">code</a> /
+                <a href="data/styleTransfer.pdf">report (spanish)</a> /
+                <a href="data/styleTransfer.txt">description</a> 
+                <p></p>
+                <p>Style-transfer implementarion based on the paper <a href="https://arxiv.org/abs/1508.06576">A neural algorithm of artistic style</a> using VGG-19.</p>
+              </td>
+            </tr> 
 
             <tr onmouseout="ml3d_stop()" onmouseover="ml3d_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
