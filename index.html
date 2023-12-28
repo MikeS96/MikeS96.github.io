@@ -174,7 +174,19 @@
                     </p>
                     <ul>
                       <li>
-                        <span style="color:#ff0000"><strong>[Sep 2023]</strong></span> I will continue my academic
+                        <span style="color:#ff0000"><strong>[Nov 2023]</strong></span> The paper 
+                        "The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups"</a> has been submitted
+                        for review in the journal <a href="https://www.ieee-ras.org/publications/ra-l">IEEE Robotics and Automation Letters (RA-L)</a>. 
+                      </li>
+                      <li>
+                        <span style="color:#ff0000"><strong>[Oct 2023]</strong></span> Our work 
+                        <a href="https://drive.google.com/drive/folders/1b0JItUNk-wiqcsC4f7zX5mOULjXwWxZ5">"The 
+                          Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups"</a> has been accepted 
+                          at the <a href="https://sites.google.com/view/ropem/">ROPEM</a> workshop @ <a href="https://ieee-iros.org/">
+                          IROS 2023</a>.
+                      </li>
+                      <li>
+                        <strong>[Sep 2023]</strong> I will continue my academic
                         journey in the <a href="https://www.umontreal.ca/">Université de Montréal</a> and
                         <a href="https://mila.quebec/en/">Mila</a>, but now as a PhD student under the supervision of
                         <a href="https://liampaull.ca/">Liam Paull</a> starting in Fall 2023.
@@ -308,10 +320,96 @@
                   <td></td>
                 </tr>
 
+
+                <!-- HEF -->
+                <tr onmouseout="hef_real_stop()" onmouseover="hef_real_start()">
+                  <td
+                      style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                    <div class="aligned">
+                      <div class="two" id='hef_real_seg'>
+                        <img src='images/hef_after.gif' width="160">
+                      </div>
+                      <img src='images/hef_before.png' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function hef_real_start() {
+                        document.getElementById('hef_real_seg').style.opacity = "1";
+                      }
+
+                      function hef_real_stop() {
+                        document.getElementById('hef_real_seg').style.opacity = "0";
+                      }
+                      hef_real_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://drive.google.com/drive/folders/1b0JItUNk-wiqcsC4f7zX5mOULjXwWxZ5">
+                      <papertitle>The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups
+                      </papertitle>
+                    </a>
+                    <br>
+                    <strong>Miguel Saavedra-Ruiz &#42;</strong>,
+                    <a href="https://robots.engin.umich.edu/People/StevenParkison">Steven Parkison &#42</a>,
+                    Ria Arora,
+                    <a href="https://www.mcgill.ca/mecheng/james-forbes">James Forbes</a>,
+                    <a href="https://liampaull.ca/">Liam Paull</a>
+                    <br>
+                    <em>Robotic Perception And Mapping: Frontier Vision & Learning Techniques (ROPEM) @ IROS</em>, 2023 &nbsp <span
+                          style="color:#ff0000"><strong>(Workshop)</strong></span>
+                    <br>
+                    <div class="paper" id="hef_real">
+                      <a href="https://drive.google.com/drive/folders/1b0JItUNk-wiqcsC4f7zX5mOULjXwWxZ5">paper / poster</a> /
+                      <a href="javascript:togglebib('hef_real')" class="togglebib">bibtex</a>
+                      <pre id="hef" xml:space="preserve">
+@inproceedings{parkison2023harmonic,
+  title        = {The Harmonic Exponential Filter for Recursive Nonparametric Estimation on Motion Groups},
+  author       = {Steven A. Parkison and Miguel Saavedra-Ruiz and Ria Arora and James Richard Forbes and Liam Paull},
+  year         = {2023},
+  booktitle    = {Robotic Perception and Mapping: Frontier Vision \& Learning Techniques @ IROS 2023},
+  volume       = {},
+  number       = {},
+  pages        = {},
+  doi          = {}
+} </pre>
+                    </div>
+                    <p></p>
+                    <div class="paper" id="hef_real_description">
+                      <h6><a href="javascript:togglebib('hef_real_description')" class="togglebib">
+                         A nonparametric and multimodal filtering approach that leverages harmonic exponential distributions.
+                      <pre xml:space="preserve">
+Bayesian estimation is a vital tool in robotics as it allows systems to update
+the belief of the robot state using incomplete information from noisy sensors. 
+To render the state estimation problem tractable, many systems assume that the 
+motion and measurement noise, as well as the state distribution, are all 
+unimodal and Gaussian. However, there are numerous scenarios and systems that 
+do not comply with these assumptions. Existing non-parametric filters that are 
+used to model multimodal distributions have drawbacks that limit their ability 
+to represent a diverse set of distributions. In this paper, we introduce a 
+novel approach to nonparametric Bayesian filtering to cope with multimodal 
+distributions using harmonic exponential distributions. This approach leverages 
+two key insights of harmonic exponential distributions: a) the product of two 
+distributions can be expressed as the element-wise addition of their log-likelihood 
+Fourier coefficients, and b) the convolution of two distributions can be efficiently 
+computed as the tensor product of their Fourier coefficients. These observations 
+enable the development of an efficient and exact solution to the Bayes filter up 
+to the band limit of a Fourier transform.  We demonstrate our filter's superior 
+performance compared with established nonparametric filtering methods across a 
+range of simulated and real-world localization tasks.
+                      </pre>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Break of line-->
+                <tr>
+                  <td colspan="2" style="padding:0; margin:0;">
+                    <hr style="padding:0; margin:0;">
+                  </td>
+                </tr>
+
                 <!-- One4All -->
                 <tr onmouseout="o4a_real_stop()" onmouseover="o4a_real_start()">
                   <td
-                      style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                      style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="aligned">
                       <div class="two" id='o4a_real_seg'>
                         <img src='images/o4a_real_after.gif' width="160">
@@ -421,7 +519,7 @@ successful real-world navigation using a Jackal UGV platform.
                     <a href="https://liampaull.ca/">Liam Paull</a>
                     <br>
                     <em>Conference on Robotics and Vision (CRV)</em>, 2022 &nbsp <span
-                          style="color:#ff0000"><strong>(Poster Presentation)</strong></span>
+                          style="color:#ff0000"><strong>(Conference Proceedings)</strong></span>
                     <br>
                     <div class="paper" id="dino_real">
                       <a href="https://ieeexplore.ieee.org/document/9866912">paper</a> /
@@ -596,8 +694,7 @@ capabilities of an Odroid XU4 embedded processor.  </pre>
                     <strong>Miguel Saavedra-Ruiz</strong>,
                     <a href="https://scholar.google.com.au/citations?user=x3M1JlAAAAAJ&hl=en">Victor Romero-Cano</a>
                     <br>
-                    <em>LatinX Workshop at CVPR</em>, 2021 &nbsp <span style="color:#ff0000"><strong>(Poster
-                        Presentation)</strong></span>
+                    <em>LatinX Workshop at CVPR</em>, 2021 &nbsp <span style="color:#ff0000"><strong>(Workshop)</strong></span>
                     <br>
                     <div class="paper" id="ml3d">
                       <a href="https://research.latinxinai.org/workshops/cvpr/cvpr-2021.html#:~:text=21-,High%2Dlevel%20camera%2DLiDAR%20fusion%20for%203D%20object%20detection%20with%20machine%20learning,-3D%20VISION">paper</a> /
@@ -681,7 +778,7 @@ parameters are estimated through a SVR regressor. </pre>
                     <a href="https://www.linkedin.com/in/ana-maria-pinto-b380b017a/">Ana Pinto</a>,
                     <a href="https://scholar.google.com.au/citations?user=x3M1JlAAAAAJ&hl=en">Victor Romero-Cano</a>
                     <br>
-                    <em>CCRA</em>, 2018 &nbsp <span style="color:#ff0000"><strong>(Oral Presentation)</strong></span>
+                    <em>CCRA</em>, 2018 &nbsp <span style="color:#ff0000"><strong>(Conference Proceedings)</strong></span>
                     <br>
                     <div class="paper" id="dtl">
                       <a href="https://ieeexplore.ieee.org/document/8588112">paper</a> /
@@ -1481,7 +1578,7 @@ crowded areas (Implemented in Python/ Linux) </pre>
               <tr>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%">
                   <p style="color:#333">
-                    <strong>Updated</strong> Sep 11th 2023
+                    <strong>Updated</strong> Dec 28th 2023
                   </p>
                 </td>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align:right">
