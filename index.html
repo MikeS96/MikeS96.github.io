@@ -14,7 +14,7 @@
   <!-- Academicons -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
   <!-- TO HAVE ICONS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Style -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link href="style.css" rel="stylesheet" type="text/css" />
@@ -111,7 +111,7 @@
                     <!-- Icons -->
                     <p style="text-align:center">
                       <a href="https://github.com/MikeS96"><span style="font-size:24px"
-                          class="social-icon fa fa-github"></span></a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                          class="social-icon fa-brands fa-github"></span></a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                       <!-- <a href=""><span  class="social-icon fa fa-skype"></span></a> &nbsp  &nbsp  &nbsp  &nbsp  -->
                       <a href="data/MiguelSaavedra_CV.pdf" style="font-size:24px" class="links"> CV </a> &nbsp &nbsp
                       &nbsp &nbsp &nbsp &nbsp
@@ -119,8 +119,8 @@
                           style="font-size:24px" class="ai ai-google-scholar ai"></span></a> &nbsp &nbsp &nbsp &nbsp
                       &nbsp &nbsp
                       <a href="https://www.linkedin.com/in/miguel-saavedra-ruiz"><span style="font-size:24px"
-                          class="social-icon fa fa-linkedin"></span></a> &nbsp  &nbsp  &nbsp  &nbsp
-                      <a href="https://twitter.com/miguelSaaRuiz"><span style="font-size:24px" class="social-icon fa fa-twitter"></span></a>
+                          class="social-icon fa-brands fa-linkedin"></span></a> &nbsp  &nbsp  &nbsp  &nbsp
+                      <a href="https://twitter.com/miguelSaaRuiz"><span style="font-size:24px" class="social-icon fa-brands fa-x-twitter"></span></a>          
                     </p>
                     <hr>
                   </td>
@@ -146,8 +146,8 @@
                       <heading>Research</heading>
                     </p>
                     <p>
-                      I am broadly interested in the areas of: <strong>AI applied to robotics vision</strong>,
-                      <strong>non-parametric state estimation</strong>, <strong>SLAM</strong>, <strong>self-supervised
+                      I am broadly interested in the areas of: <strong>AI applied to robotics vision</strong>, 
+                      <strong>Lifelong SLAM</strong>, <strong>non-parametric state estimation</strong>, <strong>self-supervised
                       representation learning for embodied agents</strong>, <strong>robot navigation</strong>, and
                       <strong>uncertainty estimation</strong>. Central to my research is the following question: "<em>How
                       can embody agents effectively leverage prior knowledge—be it geometric, semantic, or
@@ -174,22 +174,30 @@
                     </p>
                     <ul>
                       <li>
-                        <span style="color:#ff0000"><strong>[Aug 2024]</strong></span> The call for papers for our Workshop
+                        <span style="color:#ff0000"><strong>[Mar 2025]</strong></span> The paper
+                        <a href="https://montrealrobotics.ca/perpetua/">"Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments"</a> has been submitted for review at the IEEE/RSJ International Conference on Intelligent Robots and Systems <a href="http://www.iros25.org">(IROS 2025)</a>.
+                      </li>
+                      <li>
+                        <span style="color:#ff0000"><strong>[Jan 2025]</strong></span> The paper
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10833738">"The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups"</a> has been accepted for publication in the IEEE Robotics and Automation Letters <a href="https://www.ieee-ras.org/publications/ra-l">(RA-L)</a>!
+                      </li>
+                      <li>
+                        <strong>[Aug 2024]</strong> The call for papers for our Workshop
                         <a href="https://montrealrobotics.ca/test-of-time-workshop/">"Standing the Test of Time: Retrospective and Future of World Representations for Lifelong Robotics"</a>
                         @IROS2024 is now open! 🚨🚨Consider submitting your paper <a href="https://montrealrobotics.ca/test-of-time-workshop/callforpapers/">here</a>🚨🚨
                       </li>
                       <li>
-                        <span style="color:#ff0000"><strong>[Aug 2024]</strong></span> The paper
+                        <strong>[Aug 2024]</strong> The paper
                         "The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups"</a> has been submitted
                         for review in the journal <a href="https://www.ieee-ras.org/publications/ra-l">IEEE Robotics and Automation Letters (RA-L)</a>.
                       </li>
                       <li>
-                        <span style="color:#ff0000"><strong>[Jul 2024]</strong></span> I have been named to the
+                        <strong>[Jul 2024]</strong> I have been named to the
                         <a href="https://esp.umontreal.ca/les-esp/liste-dhonneur-du-recteur/#c710155:~:text=Miguel%20Angel%20Saavedra%20Ruiz%20%2D%20Ma%C3%AEtrise%20en%20informatique">Rector's Honor List</a>
                         at <a href="https://www.umontreal.ca/">Université de Montréal</a> for the 2023-2024 academic year.
                       </li>
                       <li>
-                        <span style="color:#ff0000"><strong>[Jun 2024]</strong></span> The Workshop
+                        <strong>[Jun 2024]</strong> The Workshop
                         <a href="https://montrealrobotics.ca/test-of-time-workshop/">"Standing the Test of Time: Retrospective and Future of World Representations for Lifelong Robotics"</a>
                         has been accepted at the IEEE/RSJ International Conference on Intelligent Robots and Systems
                         <a href="https://iros2024-abudhabi.org/">(IROS 2024)</a>.
@@ -337,10 +345,93 @@
                 </tr>
 
 
+                <!-- Perpetua -->
+                <tr onmouseout="perpetua_real_stop()" onmouseover="perpetua_real_start()">
+                  <td
+                      style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                    <div class="aligned">
+                      <div class="two" id='perpetua_real_seg'>
+                        <img src='images/perpetua_after.gif' width="160">
+                      </div>
+                      <img src='images/perpetua_before.png' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function perpetua_real_start() {
+                        document.getElementById('perpetua_real_seg').style.opacity = "1";
+                      }
+
+                      function perpetua_real_stop() {
+                        document.getElementById('perpetua_real_seg').style.opacity = "0";
+                      }
+                      perpetua_real_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://montrealrobotics.ca/perpetua/">
+                      <papertitle>Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments
+                      </papertitle>
+                    </a>
+                    <br>
+                    <strong>Miguel Saavedra-Ruiz</strong>,
+                    <a href="https://samernashed.github.io/">Samer B. Nashed</a>,
+                    <a href="https://velythyl.github.io/">Charlie Gauthier</a>,
+                    <a href="https://liampaull.ca/">Liam Paull</a>
+                    <br>
+                    2025 &nbsp <span
+                          style="color:#ff0000"><strong>(Under Review)</strong></span>
+                    <br>
+                    <div class="paper" id="perpetua_real">
+                      <a href="https://montrealrobotics.ca/perpetua/files/paper.pdf"> pre-print </a> /
+                      <a href="https://montrealrobotics.ca/perpetua/"> webpage </a> /
+                      <a href="https://github.com/montrealrobotics/perpetua-code"> code </a> /
+                      <a href="javascript:togglebib('perpetua_real')" class="togglebib">bibtex</a>
+                      <pre id="perpetua" xml:space="preserve">
+@article{saavedra2025perpetua,
+  title        = {Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments},
+  author       = {Saavedra-Ruiz, Miguel and Nashed, Samer and Gauthier, Charlie and Paull, Liam},
+  year         = 2025,
+  journal      = {arXiv preprint},
+}           </pre>
+                    </div>
+                    <p></p>
+                    <div class="paper" id="perpetua_real_description">
+                      <h6><a href="javascript:togglebib('perpetua_real_description')" class="togglebib">
+                        An efficient method to estimate and predict feature persistence in semi-static environments. 
+                      <pre xml:space="preserve">
+Many robotic systems require extended deployments in complex, dynamic 
+environments. In such deployments, parts of the environment may 
+change in between subsequent observations by the robot. Few robotic 
+mapping or environment modeling algorithms are capable of representing 
+dynamic features in a way that enables predicting their future state. 
+Instead, most approaches opt to filter certain state observations, 
+either by removing them or some form of weighted averaging. This paper 
+introduces \textit{Perpetua}, a method for modeling the dynamics of 
+semi-static features. Perpetua is able to: incorporate prior knowledge 
+about the dynamics of the feature if it exists, track multiple hypotheses, 
+and adapt over time to enable predicting their future state. Specifically, 
+we chain together mixtures of ``persistence'' and ``emergence'' filters 
+to model the probability that features will disappear or reappear in a 
+formal Bayesian framework. The approach is an efficient, scalable, 
+general, and robust method for estimating the state of features in an 
+environment, both in the present as well as at arbitrary future times. 
+Through experiments on both simulated and real-world data, we find 
+Perpetua yields better accuracy than similar approaches while also being 
+online adaptable and robust to missing observations.
+                      </pre>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Break of line-->
+                <tr>
+                  <td colspan="2" style="padding:0; margin:0;">
+                    <hr style="padding:0; margin:0;">
+                  </td>
+                </tr>
+
                 <!-- HEF -->
                 <tr onmouseout="hef_real_stop()" onmouseover="hef_real_start()">
                   <td
-                      style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                      style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="aligned">
                       <div class="two" id='hef_real_seg'>
                         <img src='images/hef_after.gif' width="160">
@@ -359,61 +450,68 @@
                     </script>
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://drive.google.com/drive/folders/1b0JItUNk-wiqcsC4f7zX5mOULjXwWxZ5">
+                    <a href="https://montrealrobotics.ca/hef/">
                       <papertitle>The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups
                       </papertitle>
                     </a>
                     <br>
-                    <strong>Miguel Saavedra-Ruiz &#42;</strong>,
-                    <a href="https://robots.engin.umich.edu/People/StevenParkison">Steven Parkison &#42</a>,
+                    <strong>Miguel Saavedra-Ruiz</strong>,
+                    <a href="https://robots.engin.umich.edu/People/StevenParkison">Steven Parkison</a>,
                     Ria Arora,
                     <a href="https://www.mcgill.ca/mecheng/james-forbes">James Forbes</a>,
                     <a href="https://liampaull.ca/">Liam Paull</a>
+                    <br>
+                    <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2025 &nbsp <span
+                          style="color:#ff0000"><strong>(Journal Publication)</strong></span>
                     <br>
                     <em>Robotic Perception And Mapping: Frontier Vision & Learning Techniques (ROPEM) @ IROS</em>, 2023 &nbsp <span
                           style="color:#ff0000"><strong>(Workshop)</strong></span>
                     <br>
                     <div class="paper" id="hef_real">
                       <a href="https://arxiv.org/abs/2408.00907"> arXiv </a> /
+                      <a href="https://ieeexplore.ieee.org/abstract/document/10833738"> publication </a> /
                       <a href="https://github.com/montrealrobotics/harmonic-filter"> code </a> /
                       <a href="https://montrealrobotics.ca/hef/"> webpage </a> /
-                      <a href="https://drive.google.com/drive/folders/1b0JItUNk-wiqcsC4f7zX5mOULjXwWxZ5"> paper / poster</a> /
+                      <a href="https://drive.google.com/drive/folders/1b0JItUNk-wiqcsC4f7zX5mOULjXwWxZ5"> poster</a> /
                       <a href="javascript:togglebib('hef_real')" class="togglebib">bibtex</a>
                       <pre id="hef" xml:space="preserve">
-@inproceedings{parkison2023harmonic,
-  title        = {The Harmonic Exponential Filter for Recursive Nonparametric Estimation on Motion Groups},
-  author       = {Steven A. Parkison and Miguel Saavedra-Ruiz and Ria Arora and James Richard Forbes and Liam Paull},
-  year         = {2023},
-  booktitle    = {Robotic Perception and Mapping: Frontier Vision \& Learning Techniques @ IROS 2023},
-  volume       = {},
-  number       = {},
-  pages        = {},
-  doi          = {}
-} </pre>
+@article{saavedra2025hef,
+  author={Saavedra-Ruiz, Miguel and Parkison, Steven A. and Arora, Ria and Forbes, James Richard and Paull, Liam},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups}, 
+  year={2025},
+  volume={10},
+  number={2},
+  pages={2096-2103},
+  doi={10.1109/LRA.2025.3527346}
+}       </pre>
                     </div>
                     <p></p>
                     <div class="paper" id="hef_real_description">
                       <h6><a href="javascript:togglebib('hef_real_description')" class="togglebib">
                          A nonparametric and multimodal filtering approach that leverages harmonic exponential distributions.
                       <pre xml:space="preserve">
-Bayesian estimation is a vital tool in robotics as it allows systems to update
-the belief of the robot state using incomplete information from noisy sensors. 
-To render the state estimation problem tractable, many systems assume that the 
-motion and measurement noise, as well as the state distribution, are all 
-unimodal and Gaussian. However, there are numerous scenarios and systems that 
-do not comply with these assumptions. Existing non-parametric filters that are 
-used to model multimodal distributions have drawbacks that limit their ability 
-to represent a diverse set of distributions. In this paper, we introduce a 
-novel approach to nonparametric Bayesian filtering to cope with multimodal 
-distributions using harmonic exponential distributions. This approach leverages 
-two key insights of harmonic exponential distributions: a) the product of two 
-distributions can be expressed as the element-wise addition of their log-likelihood 
-Fourier coefficients, and b) the convolution of two distributions can be efficiently 
-computed as the tensor product of their Fourier coefficients. These observations 
-enable the development of an efficient and exact solution to the Bayes filter up 
-to the band limit of a Fourier transform.  We demonstrate our filter's superior 
-performance compared with established nonparametric filtering methods across a 
-range of simulated and real-world localization tasks.
+Bayesian estimation is a vital tool in robotics as it allows systems 
+to update the robot state belief using incomplete information from 
+noisy sensors. To render the state estimation problem tractable, 
+many systems assume that the motion and measurement noise, as well 
+as the state distribution, are all unimodal and Gaussian. However, 
+there are numerous scenarios and systems that do not comply with 
+these assumptions. Existing nonparametric filters that are used to 
+model multimodal distributions have drawbacks that limit their ability 
+to represent a diverse set of distributions. This paper introduces 
+a novel approach to nonparametric Bayesian filtering on motion groups, 
+designed to handle multimodal distributions using harmonic exponential 
+distributions. This approach leverages two key insights of harmonic 
+exponential distributions: a) the product of two distributions can 
+be expressed as the element-wise addition of their log-likelihood 
+Fourier coefficients, and b) the convolution of two distributions 
+can be efficiently computed as the tensor product of their Fourier 
+coefficients. These observations enable the development of an efficient 
+and asymptotically exact solution to the Bayes filter up to the band 
+limit of a Fourier transform. We demonstrate our filter's superior 
+performance compared with established nonparametric filtering methods 
+across a range of simulated and real-world localization tasks.
                       </pre>
                     </div>
                   </td>
@@ -1597,7 +1695,7 @@ crowded areas (Implemented in Python/ Linux) </pre>
               <tr>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%">
                   <p style="color:#333">
-                    <strong>Updated</strong> August 5th 2024
+                    <strong>Updated</strong> March 11th 2025
                   </p>
                 </td>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align:right">
