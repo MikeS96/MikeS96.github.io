@@ -185,10 +185,94 @@
                 </tr>
 
 
+                <!-- Flow-Maps -->
+                <tr onmouseout="flowmaps_real_stop()" onmouseover="flowmaps_real_start()">
+                  <td
+                      style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                    <div class="aligned">
+                      <div class="two" id='flowmaps_real_seg'>
+                        <img src='images/flowmaps_after.gif' width="160">
+                      </div>
+                      <img src='images/flowmaps_before.png' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function flowmaps_real_start() {
+                        document.getElementById('flowmaps_real_seg').style.opacity = "1";
+                      }
+
+                      function flowmaps_real_stop() {
+                        document.getElementById('flowmaps_real_seg').style.opacity = "0";
+                      }
+                      flowmaps_real_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2509.16398">
+                      <papertitle>Dynamic Objects Relocalization in Changing Environments with Flow Matching
+                      </papertitle>
+                    </a>
+                    <br>
+                    <strong>Miguel Saavedra-Ruiz &#42;</strong>,
+                    <a href="https://scholar.google.com/citations?user=TCqScyQAAAAJ&hl=it">Francesco Argenziano &#42;</a>,
+                    <a href="https://sachamorin.github.io/">Sacha Morin</a>,
+                    <a href="https://oecd.ai/en/community/daniele-nardi">Daniele Nardi</a>,
+                    <a href="https://liampaull.ca/">Liam Paull</a>
+                    <br>
+                    <em>Workshop in Perception and Planning for Mobile Manipulation in Changing Environments @ IROS</em>, 2025 &nbsp <span
+                          style="color:#ff0000"><strong>(Workshop)</strong></span>
+                    <br>
+                    <div class="paper" id="flowmaps_real">
+                      <a href="https://arxiv.org/abs/2509.16398"> arXiv </a> /
+                      <a href="https://github.com/Fra-Tsuna/flowmaps"> code </a> /
+                      <a href="javascript:togglebib('flowmaps_real')" class="togglebib">bibtex</a>
+                      <pre id="flowmaps_real" xml:space="preserve">
+@inproceedings{saavedra2025flowmaps,
+  title={Dynamic Objects Relocalization in Changing Environments with Flow Matching},
+  author={Francesco Argenziano and Miguel Saavedra-Ruiz and Sacha Morin and Daniele Nardi and Liam Paull},
+  year={2025},
+  booktitle={Perception and Planning for Mobile Manipulation in Changing Environments @ IROS},
+} </pre>
+                    </div>
+                    <p></p>
+                    <div class="paper" id="perpetua_real_description">
+                      <h6><a href="javascript:togglebib('perpetua_real_description')" class="togglebib">
+                        An efficient method to estimate and predict feature persistence in semi-static environments. 
+                      <pre xml:space="preserve">
+Many robotic systems require extended deployments in complex, dynamic 
+environments. In such deployments, parts of the environment may 
+change in between subsequent observations by the robot. Few robotic 
+mapping or environment modeling algorithms are capable of representing 
+dynamic features in a way that enables predicting their future state. 
+Instead, most approaches opt to filter certain state observations, 
+either by removing them or some form of weighted averaging. This paper 
+introduces \textit{Perpetua}, a method for modeling the dynamics of 
+semi-static features. Perpetua is able to: incorporate prior knowledge 
+about the dynamics of the feature if it exists, track multiple hypotheses, 
+and adapt over time to enable predicting their future state. Specifically, 
+we chain together mixtures of ``persistence'' and ``emergence'' filters 
+to model the probability that features will disappear or reappear in a 
+formal Bayesian framework. The approach is an efficient, scalable, 
+general, and robust method for estimating the state of features in an 
+environment, both in the present as well as at arbitrary future times. 
+Through experiments on both simulated and real-world data, we find 
+Perpetua yields better accuracy than similar approaches while also being 
+online adaptable and robust to missing observations.
+                      </pre>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Break of line-->
+                <tr>
+                  <td colspan="2" style="padding:0; margin:0;">
+                    <hr style="padding:0; margin:0;">
+                  </td>
+                </tr>
+
+
                 <!-- Perpetua -->
                 <tr onmouseout="perpetua_real_stop()" onmouseover="perpetua_real_start()">
                   <td
-                      style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                      style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="aligned">
                       <div class="two" id='perpetua_real_seg'>
                         <img src='images/perpetua_after.gif' width="160">
@@ -1730,7 +1814,7 @@ crowded areas (Implemented in Python/ Linux) </pre>
               <tr>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%">
                   <p style="color:#333">
-                    <strong>Updated</strong> Sep 10th 2025
+                    <strong>Updated</strong> Sep 24th 2025
                   </p>
                 </td>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align:right">
