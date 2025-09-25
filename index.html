@@ -356,37 +356,27 @@
                       <a href="https://arxiv.org/abs/2509.16398"> arXiv </a> /
                       <a href="https://github.com/Fra-Tsuna/flowmaps"> code </a> /
                       <a href="javascript:togglebib('flowmaps_real')" class="togglebib">bibtex</a>
-                      <pre id="flowmaps_real" xml:space="preserve">
+                      <div class="bibtex-container">
+                        <pre id="flowmaps_real_bib" class="bibtex" xml:space="preserve">
 @inproceedings{saavedra2025flowmaps,
   title={Dynamic Objects Relocalization in Changing Environments with Flow Matching},
   author={Francesco Argenziano and Miguel Saavedra-Ruiz and Sacha Morin and Daniele Nardi and Liam Paull},
   year={2025},
   booktitle={Perception and Planning for Mobile Manipulation in Changing Environments @ IROS},
 } </pre>
+                      </div>
                     </div>
                     <p></p>
                     <div class="paper" id="flowmaps_real_description">
                       <h6><a href="javascript:togglebib('flowmaps_real_description')" class="togglebib">
                         A Flow Matching–based model that exploits human–object interaction patterns to predict multimodal object locations in dynamic environments.
-                      <pre xml:space="preserve">
-Task and motion planning are long-standing challenges in robotics, 
-especially when robots have to deal with dynamic environments 
-exhibiting long-term dynamics, such as households or warehouses. 
-In these environments, long-term dynamics mostly stem from human 
-activities, since previously detected objects can be moved or 
-removed from the scene. This adds the necessity to find such objects 
-again before completing the designed task, increasing the risk of 
-failure due to missed relocalizations. However, in these settings, 
-the nature of such human-object interactions is often overlooked, 
-despite being governed by common habits and repetitive patterns. 
-Our conjecture is that these cues can be exploited to recover the 
-most likely objects' positions in the scene, helping to address 
-the problem of unknown relocalization in changing environments. 
-To this end we propose FlowMaps, a model based on Flow Matching 
-that is able to infer multimodal object locations over space and 
-time. Our results present statistical evidence to support our 
-hypotheses, opening the way to more complex applications of our approach.
-                      </pre>
+                      </a></h6>
+                      <div class="abstract-container">
+                        <div class="abstract-header">Abstract</div>
+                        <div class="abstract">
+Task and motion planning are long-standing challenges in robotics, especially when robots have to deal with dynamic environments exhibiting long-term dynamics, such as households or warehouses. In these environments, long-term dynamics mostly stem from human activities, since previously detected objects can be moved or removed from the scene. This adds the necessity to find such objects again before completing the designed task, increasing the risk of failure due to missed relocalizations. However, in these settings, the nature of such human-object interactions is often overlooked, despite being governed by common habits and repetitive patterns. Our conjecture is that these cues can be exploited to recover the most likely objects' positions in the scene, helping to address the problem of unknown relocalization in changing environments. To this end we propose FlowMaps, a model based on Flow Matching that is able to infer multimodal object locations over space and time. Our results present statistical evidence to support our hypotheses, opening the way to more complex applications of our approach.
+                        </div>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -438,7 +428,8 @@ hypotheses, opening the way to more complex applications of our approach.
                       <a href="https://montrealrobotics.ca/perpetua"> webpage </a> /
                       <a href="https://github.com/montrealrobotics/perpetua-code"> code </a> /
                       <a href="javascript:togglebib('perpetua_real')" class="togglebib">bibtex</a>
-                      <pre id="perpetua" xml:space="preserve">
+                      <div class="bibtex-container">
+                        <pre id="perpetua" class="bibtex" xml:space="preserve">
 @inproceedings{saavedra2025perpetua,
   title={Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments},
   author={Saavedra-Ruiz, Miguel and Nashed, Samer and Gauthier, Charlie and Paull, Liam},
@@ -447,32 +438,19 @@ hypotheses, opening the way to more complex applications of our approach.
   year={2025},
   organization={IEEE}
 } </pre>
+                      </div>
                     </div>
                     <p></p>
                     <div class="paper" id="perpetua_real_description">
                       <h6><a href="javascript:togglebib('perpetua_real_description')" class="togglebib">
                         An efficient method to estimate and predict feature persistence in semi-static environments. 
-                      <pre xml:space="preserve">
-Many robotic systems require extended deployments in complex, dynamic 
-environments. In such deployments, parts of the environment may 
-change in between subsequent observations by the robot. Few robotic 
-mapping or environment modeling algorithms are capable of representing 
-dynamic features in a way that enables predicting their future state. 
-Instead, most approaches opt to filter certain state observations, 
-either by removing them or some form of weighted averaging. This paper 
-introduces \textit{Perpetua}, a method for modeling the dynamics of 
-semi-static features. Perpetua is able to: incorporate prior knowledge 
-about the dynamics of the feature if it exists, track multiple hypotheses, 
-and adapt over time to enable predicting their future state. Specifically, 
-we chain together mixtures of ``persistence'' and ``emergence'' filters 
-to model the probability that features will disappear or reappear in a 
-formal Bayesian framework. The approach is an efficient, scalable, 
-general, and robust method for estimating the state of features in an 
-environment, both in the present as well as at arbitrary future times. 
-Through experiments on both simulated and real-world data, we find 
-Perpetua yields better accuracy than similar approaches while also being 
-online adaptable and robust to missing observations.
-                      </pre>
+                      </a></h6>
+                      <div class="abstract-container">
+                        <div class="abstract-header">Abstract</div>
+                        <div class="abstract">
+Many robotic systems require extended deployments in complex, dynamic environments. In such deployments, parts of the environment may change in between subsequent observations by the robot. Few robotic mapping or environment modeling algorithms are capable of representing dynamic features in a way that enables predicting their future state. Instead, most approaches opt to filter certain state observations, either by removing them or some form of weighted averaging. This paper introduces Perpetua, a method for modeling the dynamics of semi-static features. Perpetua is able to: incorporate prior knowledge about the dynamics of the feature if it exists, track multiple hypotheses, and adapt over time to enable predicting their future state. Specifically, we chain together mixtures of "persistence" and "emergence" filters to model the probability that features will disappear or reappear in a formal Bayesian framework. The approach is an efficient, scalable, general, and robust method for estimating the state of features in an environment, both in the present as well as at arbitrary future times. Through experiments on both simulated and real-world data, we find Perpetua yields better accuracy than similar approaches while also being online adaptable and robust to missing observations.
+                        </div>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -529,7 +507,8 @@ online adaptable and robust to missing observations.
                       <a href="https://montrealrobotics.ca/hef/"> webpage </a> /
                       <a href="https://drive.google.com/drive/folders/1b0JItUNk-wiqcsC4f7zX5mOULjXwWxZ5"> poster</a> /
                       <a href="javascript:togglebib('hef_real')" class="togglebib">bibtex</a>
-                      <pre id="hef" xml:space="preserve">
+                      <div class="bibtex-container">
+                        <pre id="hef" class="bibtex" xml:space="preserve">
 @article{saavedra2025hef,
   author={Saavedra-Ruiz, Miguel and Parkison, Steven A. and Arora, Ria and Forbes, James Richard and Paull, Liam},
   journal={IEEE Robotics and Automation Letters}, 
@@ -540,34 +519,20 @@ online adaptable and robust to missing observations.
   pages={2096-2103},
   doi={10.1109/LRA.2025.3527346}
 }       </pre>
+                      </div>
                     </div>
                     <p></p>
                     <div class="paper" id="hef_real_description">
                       <h6><a href="javascript:togglebib('hef_real_description')" class="togglebib">
                          A nonparametric and multimodal filtering approach that leverages harmonic exponential distributions.
-                      <pre xml:space="preserve">
-Bayesian estimation is a vital tool in robotics as it allows systems 
-to update the robot state belief using incomplete information from 
-noisy sensors. To render the state estimation problem tractable, 
-many systems assume that the motion and measurement noise, as well 
-as the state distribution, are all unimodal and Gaussian. However, 
-there are numerous scenarios and systems that do not comply with 
-these assumptions. Existing nonparametric filters that are used to 
-model multimodal distributions have drawbacks that limit their ability 
-to represent a diverse set of distributions. This paper introduces 
-a novel approach to nonparametric Bayesian filtering on motion groups, 
-designed to handle multimodal distributions using harmonic exponential 
-distributions. This approach leverages two key insights of harmonic 
-exponential distributions: a) the product of two distributions can 
-be expressed as the element-wise addition of their log-likelihood 
-Fourier coefficients, and b) the convolution of two distributions 
-can be efficiently computed as the tensor product of their Fourier 
-coefficients. These observations enable the development of an efficient 
-and asymptotically exact solution to the Bayes filter up to the band 
-limit of a Fourier transform. We demonstrate our filter's superior 
-performance compared with established nonparametric filtering methods 
-across a range of simulated and real-world localization tasks.
-                      </pre>
+                      </a></h6>
+                      <div class="abstract-container">
+                        <div class="abstract-header">Abstract</div>
+                        <div class="abstract">
+Bayesian estimation is a vital tool in robotics as it allows systems to update the robot state belief using incomplete information from noisy sensors. To render the state estimation problem tractable, many systems assume that the motion and measurement noise, as well as the state distribution, are all unimodal and Gaussian. However, there are numerous scenarios and systems that do not comply with these assumptions. Existing nonparametric filters that are used to model multimodal distributions have drawbacks that limit their ability to represent a diverse set of distributions. This paper introduces a novel approach to nonparametric Bayesian filtering on motion groups, designed to handle multimodal distributions using harmonic exponential distributions. This approach leverages two key insights of harmonic exponential distributions: a) the product of two distributions can be expressed as the element-wise addition of their log-likelihood Fourier coefficients, and b) the convolution of two distributions can be efficiently computed as the tensor product of their Fourier coefficients. These observations enable the development of an efficient and asymptotically exact solution to the Bayes filter up to the band limit of a Fourier transform. We demonstrate our filter's superior performance compared with established nonparametric filtering methods across a range of simulated and real-world localization tasks.
+                        </div>
+                      </div>
+                    </div>
                     </div>
                   </td>
                 </tr>
@@ -617,7 +582,8 @@ across a range of simulated and real-world localization tasks.
                       <a href="https://arxiv.org/abs/2303.04011">arXiv</a> /
                       <a href="https://montrealrobotics.ca/o4a/">webpage</a> /
                       <a href="javascript:togglebib('o4a_real')" class="togglebib">bibtex</a>
-                      <pre id="o4a" xml:space="preserve">
+                      <div class="bibtex-container">
+                        <pre id="o4a" class="bibtex" xml:space="preserve">
 @inproceedings{morin2023one,
   title={One-4-all: Neural potential fields for embodied navigation},
   author={Morin, Sacha and Saavedra-Ruiz, Miguel and Paull, Liam},
@@ -626,31 +592,20 @@ across a range of simulated and real-world localization tasks.
   year={2023},
   organization={IEEE}
 }</pre>
+                      </div>
 
                     </div>
                     <p></p>
                     <div class="paper" id="o4a_real_description">
                       <h6><a href="javascript:togglebib('o4a_real_description')" class="togglebib">An end-to-end fully
                         parametric method for image-goal navigation that leverages self-supervised and manifold learning to replace a topological graph with a geodesic regressor. During navigation, the geodesic regressor is used as an attractor in a potential function defined in latent space, allowing to frame navigation as a minimization problem.</a></h6>
-                      <pre xml:space="preserve">
-A fundamental task in robotics is to navigate between two locations.
-In particular, real-world navigation can require long-horizon planning
-using high-dimensional RGB images, which poses a substantial challenge
-for end-to-end learning-based approaches. Current semi-parametric methods
-instead achieve long-horizon navigation by combining learned modules with
-a topological memory of the environment, often represented as a graph over
-previously collected images. However, using these graphs in practice typically
-involves tuning a number of pruning heuristics to avoid spurious edges, limit
-runtime memory usage and allow reasonably fast graph queries. In this work,
-we present One-4-All (O4A), a method leveraging self-supervised and manifold
-learning to obtain a graph-free, end-to-end navigation pipeline in which the
-goal is specified as an image. Navigation is achieved by greedily minimizing
-a potential function defined continuously over the O4A latent space. Our system
-is trained offline on non-expert exploration sequences of RGB data and controls,
-and does not require any depth or pose measurements. We show that O4A can reach
-long-range goals in 8 simulated Gibson indoor environments, and further demonstrate
-successful real-world navigation using a Jackal UGV platform.
-                      </pre>
+                      <div class="abstract-container">
+                        <div class="abstract-header">Abstract</div>
+                        <div class="abstract">
+A fundamental task in robotics is to navigate between two locations. In particular, real-world navigation can require long-horizon planning using high-dimensional RGB images, which poses a substantial challenge for end-to-end learning-based approaches. Current semi-parametric methods instead achieve long-horizon navigation by combining learned modules with a topological memory of the environment, often represented as a graph over previously collected images. However, using these graphs in practice typically involves tuning a number of pruning heuristics to avoid spurious edges, limit runtime memory usage and allow reasonably fast graph queries. In this work, we present One-4-All (O4A), a method leveraging self-supervised and manifold learning to obtain a graph-free, end-to-end navigation pipeline in which the goal is specified as an image. Navigation is achieved by greedily minimizing a potential function defined continuously over the O4A latent space. Our system is trained offline on non-expert exploration sequences of RGB data and controls, and does not require any depth or pose measurements. We show that O4A can reach long-range goals in 8 simulated Gibson indoor environments, and further demonstrate successful real-world navigation using a Jackal UGV platform.
+                        </div>
+                      </div>
+                    </div>
                     </div>
                   </td>
                 </tr>
@@ -719,30 +674,26 @@ successful real-world navigation using a Jackal UGV platform.
                       <a href="https://www.duckietown.org/archives/88017">duckietown coverage</a> /
                       <a href="data/duckieFormerPoster.png">poster</a> /
                       <a href="javascript:togglebib('dino_real')" class="togglebib">bibtex</a>
-                      <pre id="dino" xml:space="preserve">
+                      <div class="bibtex-container">
+                        <pre id="dino" class="bibtex" xml:space="preserve">
 @article{saavedra2022monocular,
 	title        = {Monocular Robot Navigation with Self-Supervised Pretrained Vision Transformers},
 	author       = {Saavedra-Ruiz, Miguel and Morin, Sacha and Paull, Liam},
 	year         = 2022,
 	journal      = {arXiv preprint arXiv:2203.03682}
 }                     </pre>
+                      </div>
                     </div>
                     <p></p>
                     <div class="paper" id="dino_real_description">
                       <h6><a href="javascript:togglebib('dino_real_description')" class="togglebib">Visual Servoing navigation using pre-trained Self-Supervised Vision Transformers.</a></h6>
-                      <pre xml:space="preserve">
-In this work, we consider the problem of learning a perception model for
-monocular robot navigation using few annotated images. Using a Vision
-Transformer (ViT) pretrained with a label-free self-supervised method, we
-successfully train a coarse image segmentation model for the Duckietown
-environment using 70 training images. Our model performs coarse image
-segmentation at the 8x8  patch level, and the inference resolution can be
-adjusted to balance prediction granularity and real-time perception constraints.
-We study how best to adapt a ViT to our task and environment, and find that some
-lightweight architectures can yield good single-image segmentations at a usable
-frame rate, even on CPU. The resulting perception model is used as the backbone
-for a simple yet robust visual servoing agent, which we deploy on a differential
-drive mobile robot to perform two tasks: lane following and obstacle avoidance. </pre>
+                      <div class="abstract-container">
+                        <div class="abstract-header">Abstract</div>
+                        <div class="abstract">
+In this work, we consider the problem of learning a perception model for monocular robot navigation using few annotated images. Using a Vision Transformer (ViT) pretrained with a label-free self-supervised method, we successfully train a coarse image segmentation model for the Duckietown environment using 70 training images. Our model performs coarse image segmentation at the 8x8 patch level, and the inference resolution can be adjusted to balance prediction granularity and real-time perception constraints. We study how best to adapt a ViT to our task and environment, and find that some lightweight architectures can yield good single-image segmentations at a usable frame rate, even on CPU. The resulting perception model is used as the backbone for a simple yet robust visual servoing agent, which we deploy on a differential drive mobile robot to perform two tasks: lane following and obstacle avoidance.
+                        </div>
+                      </div>
+                    </div>
                     </div>
                   </td>
                 </tr>
@@ -797,7 +748,8 @@ drive mobile robot to perform two tasks: lane following and obstacle avoidance. 
                       <a href="https://www.youtube.com/watch?v=2NWR9Otdz-s&feature=youtu.be">video</a> /
 
                       <a href="javascript:togglebib('dals')" class="togglebib">bibtex</a>
-                      <pre xml:space="preserve">
+                      <div class="bibtex-container">
+                        <pre class="bibtex" xml:space="preserve">
 @article{9656574,
 	title        = {Monocular Visual Autonomous Landing System for Quadcopter Drones Using Software in the Loop},
 	author       = {Saavedra-Ruiz, Miguel and Pinto-Vargas, Ana Maria and Romero-Cano, Victor},
@@ -808,39 +760,19 @@ drive mobile robot to perform two tasks: lane following and obstacle avoidance. 
 	pages        = {2--16},
 	doi          = {10.1109/MAES.2021.3115208}
 }  </pre>
+                      </div>
                       <p></p>
                       <div class="paper" id="dals_description">
                         <h6><a href="javascript:togglebib('dals_description')" class="togglebib">Autonomous landing
                           system for a UAV on a terrestrial vehicle using robotics vision and control.</a>
                         </h6>
-                        <pre xml:space="preserve">
-My BEng degree project addressed the problem of the autonomous landing of a UAV
-with a landing platform located on the top of a ground vehicle. The project
-utilized vision-based techniques to detect the landing platform, a Kalman filter
-was tailored for the tracking phase and finally, a PID controller sent control
-commands to the flight controller of the UAV to land properly on the platform.
-Rigorous assessments were conducted through the simulation of the whole robotic
-stack with ROS and gazebo in the software in the loop provided by PX4.
-Ultimately, the system was tested in a custom DJI F-450 and embedded in a Odroid
-XU4. The system demonstrates a satisfactory performance and was able to land
-with a mean error of ten centimeters from the center of the landing platform
-(Implemented in Python, C++/Linux).
-
-Autonomous landing is a capability that is essential to achieve the full
-potential of multi-rotor drones in many social and industrial applications. The
-implementation and testing of this capability on physical platforms is risky and
-resource-intensive; hence, in order to ensure both a sound design process and a
-safe deployment, simulations are required before implementing a physical
-prototype. This paper presents the development of a monocular visual system,
-using a software-in-the-loop methodology, that autonomously and efficiently
-lands a quadcopter drone on a predefined landing pad, thus reducing the risks of
-the physical testing stage. In addition to ensuring that the autonomous landing
-system as a whole fulfils the design requirements using a Gazebo-based
-simulation, our approach provides a tool for safe parameter tuning and design
-testing prior to physical implementation. Finally, the proposed monocular
-vision-only approach to landing pad tracking made it possible to effectively
-implement the system in an F450 quadcopter drone with the standard computational
-capabilities of an Odroid XU4 embedded processor.  </pre>
+                        <div class="abstract-container">
+                          <div class="abstract-header">Abstract</div>
+                          <div class="abstract">
+My BEng degree project addressed the problem of the autonomous landing of a UAV with a landing platform located on the top of a ground vehicle. The project utilized vision-based techniques to detect the landing platform, a Kalman filter was tailored for the tracking phase and finally, a PID controller sent control commands to the flight controller of the UAV to land properly on the platform. Rigorous assessments were conducted through the simulation of the whole robotic stack with ROS and gazebo in the software in the loop provided by PX4. Ultimately, the system was tested in a custom DJI F-450 and embedded in a Odroid XU4. The system demonstrates a satisfactory performance and was able to land with a mean error of ten centimeters from the center of the landing platform (Implemented in Python, C++/Linux). Autonomous landing is a capability that is essential to achieve the full potential of multi-rotor drones in many social and industrial applications. The implementation and testing of this capability on physical platforms is risky and resource-intensive; hence, in order to ensure both a sound design process and a safe deployment, simulations are required before implementing a physical prototype. This paper presents the development of a monocular visual system, using a software-in-the-loop methodology, that autonomously and efficiently lands a quadcopter drone on a predefined landing pad, thus reducing the risks of the physical testing stage. In addition to ensuring that the autonomous landing system as a whole fulfils the design requirements using a Gazebo-based simulation, our approach provides a tool for safe parameter tuning and design testing prior to physical implementation. Finally, the proposed monocular vision-only approach to landing pad tracking made it possible to effectively implement the system in an F450 quadcopter drone with the standard computational capabilities of an Odroid XU4 embedded processor.
+                          </div>
+                        </div>
+                      </div>
                       </div>
                     </div>
                   </td>
@@ -891,7 +823,8 @@ capabilities of an Odroid XU4 embedded processor.  </pre>
                       <a href="https://arxiv.org/abs/2105.11060">arXiv</a> /
                       <a href="https://research.latinxinai.org/papers/cvpr/2021/png/21_poster_21.png">poster</a> /
                       <a href="javascript:togglebib('ml3d')" class="togglebib">bibtex</a>
-                      <pre xml:space="preserve">
+                      <div class="bibtex-container">
+                        <pre class="bibtex" xml:space="preserve">
 @inproceedings{salazargomez2021highlevel,
       title={High-level camera-LiDAR fusion for 3D object detection with machine learning},
       author={Gustavo A. Salazar-Gomez and Miguel A. Saavedra-Ruiz and Victor A. Romero-Cano},
@@ -899,32 +832,20 @@ capabilities of an Odroid XU4 embedded processor.  </pre>
       year={2021},
       publisher={CVPR},
 }  </pre>
+                      </div>
                       <p></p>
 
                       <div class="paper" id="ml3d_description">
                         <h6><a href="javascript:togglebib('ml3d_description')" class="togglebib">3D object detection of
                             vehicles in the NuScenes dataset using classic Machine learning such as DBSCAN and SVMs.</a>
                         </h6>
-                        <pre xml:space="preserve">
-3D object detection is a problem that has gained popularity among the research
-community due to its extensiveset of application on autonomous navigation,
-surveillance and pick-and-place. Most of the solutions proposed in the
-state-of-the-art are based on deep learning techniques and present astonishing
-results in terms of accuracy. Nevertheless, a set of problems inherits from this
-sort of solutions such as the need of enormous tagged datasets, extensive
-computational resources due to the complexity of the model and most of the time,
-no real-time inference. This work proposes an end-to-end classic Machine
-Learning (ML) pipeline to solve the 3D object detection problem for cars. The
-proposed method is leveraged on the use of frustum region proposals to segment
-and estimate the parameters of the amodal 3D bounding box. Here we do not deal
-with the problem of 2D object detection as for most of the research community
-this is considered solved with ConvolutionalNeural Networks (CNN).
-
-This task is addressed employing different ML techniques such as RANSAC for road
-segmentation and DBSCAN for clustering. Global features are extracted out of the
-segmented point cloud using The Ensemble of Shape Functions (ESF). Some feature
-are engineered through PCA and statistics. Finally, the amodal 3D bounding box
-parameters are estimated through a SVR regressor. </pre>
+                        <div class="abstract-container">
+                          <div class="abstract-header">Abstract</div>
+                          <div class="abstract">
+3D object detection is a problem that has gained popularity among the research community due to its extensive set of application on autonomous navigation, surveillance and pick-and-place. Most of the solutions proposed in the state-of-the-art are based on deep learning techniques and present astonishing results in terms of accuracy. Nevertheless, a set of problems inherits from this sort of solutions such as the need of enormous tagged datasets, extensive computational resources due to the complexity of the model and most of the time, no real-time inference. This work proposes an end-to-end classic Machine Learning (ML) pipeline to solve the 3D object detection problem for cars. The proposed method is leveraged on the use of frustum region proposals to segment and estimate the parameters of the amodal 3D bounding box. Here we do not deal with the problem of 2D object detection as for most of the research community this is considered solved with Convolutional Neural Networks (CNN). This task is addressed employing different ML techniques such as RANSAC for road segmentation and DBSCAN for clustering. Global features are extracted out of the segmented point cloud using The Ensemble of Shape Functions (ESF). Some feature are engineered through PCA and statistics. Finally, the amodal 3D bounding box parameters are estimated through a SVR regressor.
+                          </div>
+                        </div>
+                      </div>
                       </div>
                     </div>
                   </td>
@@ -975,7 +896,8 @@ parameters are estimated through a SVR regressor. </pre>
                       <a href="https://github.com/MikeS96/autonomous_landing_uav/tree/master/object_detector">code</a> /
                       <a href="https://www.youtube.com/watch?v=knH2Hju--3I&feature=emb_title">video</a> /
                       <a href="javascript:togglebib('dtl')" class="togglebib">bibtex</a>
-                      <pre xml:space="preserve">
+                      <div class="bibtex-container">
+                        <pre class="bibtex" xml:space="preserve">
 @inproceedings{8588112,
 	title        = {Detection and tracking of a landing platform for aerial robotics applications},
 	author       = {M. S. {Ruiz} and A. M. P. {Vargas} and V. R. {Cano}},
@@ -985,20 +907,17 @@ parameters are estimated through a SVR regressor. </pre>
 	number       = {},
 	pages        = {1--6}
 }                     </pre>
+                      </div>
                       <p></p>
                       <div class="paper" id="dtl_description">
                         <h6><a href="javascript:togglebib('dtl_description')" class="togglebib">Object Detection and
                             tracking pipelines to detect a landing pad on the ground from a UAV.</a></h6>
-                        <pre xml:space="preserve">
-Aerial robotic applications need to be endowed with systems capable to
-accurately locate objects of interest to perform specific tasks at hand. I
-Developed an embedded vision-based landing platform detection and tracking
-system with ROS and OpenCV. The system extended the capabilities of a SURF-based
-feature detector-descriptor that makes detections of a landing pad alongside a
-Kalman filter-based estimation module. The system demonstrated a considerable
-improvement over only-detector methods, diminishing the detection error and
-providing accurate estimations of the landing pad position (Implemented in
-C++/Linux). </pre>
+                        <div class="abstract-container">
+                          <div class="abstract-header">Abstract</div>
+                          <div class="abstract">
+Aerial robotic applications need to be endowed with systems capable to accurately locate objects of interest to perform specific tasks at hand. I developed an embedded vision-based landing platform detection and tracking system with ROS and OpenCV. The system extended the capabilities of a SURF-based feature detector-descriptor that makes detections of a landing pad alongside a Kalman filter-based estimation module. The system demonstrated a considerable improvement over only-detector methods, diminishing the detection error and providing accurate estimations of the landing pad position (Implemented in C++/Linux).
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </td>

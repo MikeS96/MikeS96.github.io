@@ -263,6 +263,43 @@ news-box {
   border-radius: 4px;
 }
 
+.bibtex-container {
+  position: relative;
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 14px;
+  overflow-x: auto;
+  display: none; /* Initially hidden */
+}
+
+.bibtex {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  white-space: pre;
+  color: #333;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #0077cc;
+  color: white;
+}
+
+.copy-btn:hover {
+  background: #005fa3;
+}
+
+
 .tag-conference {
   color: #DC267F;
   font-weight: bold;
@@ -278,4 +315,65 @@ news-box {
 .tag-preprint {
   color: #FFB000;
   font-weight: bold;
+}
+
+/* Abstract container styling */
+.abstract-container {
+  position: relative;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-left: 4px solid #007acc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+}
+
+.abstract {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2c3e50;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.abstract-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007acc;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e9ecef;
+  display: flex;
+  align-items: center;
+}
+
+.abstract-header::before {
+  content: "📄";
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Collapse button for abstracts */
+.collapse-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  padding: 4px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background: rgba(0, 122, 204, 0.1);
+  color: #007acc;
+  transition: all 0.2s ease;
+}
+
+.collapse-btn:hover {
+  background: rgba(0, 122, 204, 0.2);
+  transform: scale(1.05);
 }
