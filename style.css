@@ -242,7 +242,8 @@ news-box {
 }
 
 .news-list {
-  max-height: 300px; /* or whatever fits your design */
+  /* max-height: 175px; or whatever fits your design */
+  height: calc(4 * 2.5em); /* adjust 2.5em to roughly the height of one <li> */
   overflow-y: auto;
   padding-right: 10px;
 }
@@ -260,4 +261,21 @@ news-box {
 .news-list::-webkit-scrollbar-track {
   background: #f0f0f0;
   border-radius: 4px;
+}
+
+.tag-conference {
+  color: #DC267F;
+  font-weight: bold;
+}
+.tag-journal {
+  color: #28A745;
+  font-weight: bold;
+}
+.tag-workshop {
+  color: #9B59B6;
+  font-weight: bold;
+}
+.tag-preprint {
+  color: #FFB000;
+  font-weight: bold;
 }
