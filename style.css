@@ -227,6 +227,18 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+/* Alternative research highlight style - more subtle */
+.research-subtle {
+  background: rgba(23, 114, 208, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #1772d0;
+  border: 1px solid rgba(23, 114, 208, 0.2);
+  display: inline-block;
+  margin: 0 1px;
+}
+
 news-box {
     max-height: 300px; /* adjust height as needed */
     overflow-y: auto;
