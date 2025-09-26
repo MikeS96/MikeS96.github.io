@@ -383,3 +383,227 @@ news-box {
   background: rgba(0, 122, 204, 0.2);
   transform: scale(1.05);
 }
+
+/* ========================================
+   RESPONSIVE DESIGN FOR MOBILE DEVICES
+   ======================================== */
+
+/* Base responsive behavior for all screen sizes */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure images scale but maintain aspect ratio */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile styles for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  /* Adjust main containers for mobile */
+  .container {
+    width: 95%;
+    max-width: 95%;
+    padding: 0.5em;
+    margin: 10px auto;
+  }
+  
+  .containersmall {
+    width: 95%;
+    max-width: 95%;
+    padding: 0.5em;
+    margin: 10px auto;
+  }
+  
+  /* Make main banner table responsive */
+  table[style*="max-width:900px"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Navigation menu responsive */
+  .containersmall table[style*="width:80%"] {
+    width: 100% !important;
+  }
+  
+  .containersmall table[style*="width:80%"] td {
+    padding: 8px 4px !important;
+    font-size: 18px !important;
+  }
+  
+  .containersmall table[style*="width:80%"] a {
+    font-size: 18px !important;
+  }
+  
+  /* Profile section - stack vertically on mobile */
+  .containersmall table tbody tr {
+    display: block !important;
+  }
+  
+  .containersmall table tbody tr td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    padding: 10px !important;
+  }
+  
+  /* Profile image container */
+  .containersmall table tbody tr td[style*="width:33%"] {
+    order: -1; /* Move image to top */
+    margin-bottom: 20px;
+  }
+  
+  /* Profile image sizing */
+  .containersmall table tbody tr td[style*="width:33%"] img {
+    max-width: 200px;
+    width: 60%;
+    height: auto;
+  }
+  
+  /* Text content */
+  .containersmall table tbody tr td[style*="width:67%"] {
+    width: 100% !important;
+    padding: 15px !important;
+  }
+  
+  /* Name styling for mobile */
+  name {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* Publication/project entries - make responsive */
+  #pub_sec table tbody tr,
+  #proj_sec table tbody tr {
+    display: block !important;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  
+  #pub_sec table tbody tr td,
+  #proj_sec table tbody tr td {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 10px !important;
+  }
+  
+  /* Paper/project images */
+  #pub_sec table tbody tr td[style*="width:25%"],
+  #proj_sec table tbody tr td[style*="width:25%"] {
+    margin-bottom: 15px;
+  }
+  
+  /* Paper/project content */
+  #pub_sec table tbody tr td[style*="width:75%"],
+  #proj_sec table tbody tr td[style*="width:75%"] {
+    text-align: left !important;
+    padding: 5px 15px !important;
+  }
+  
+  /* Paper container width adjustment */
+  .paper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* News section improvements */
+  .news-list {
+    height: auto !important;
+    max-height: 300px;
+    padding-right: 5px;
+  }
+  
+  /* Social icons spacing */
+  .containersmall table tbody tr td p[style*="text-align:center"] a {
+    margin: 0 10px 10px 10px;
+    display: inline-block;
+  }
+  
+  /* Font size adjustments for mobile */
+  body, td, th, tr, p, a, strong {
+    font-size: 14px;
+  }
+  
+  heading {
+    font-size: 20px;
+  }
+  
+  papertitle {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+  
+  /* Ensure hover effects work on mobile */
+  .one, .two {
+    width: 140px;
+    height: 140px;
+  }
+  
+  /* Abstract and bibtex containers */
+  .abstract-container {
+    margin-top: 10px;
+    padding: 15px;
+  }
+  
+  .bibtex-container {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 11px;
+  }
+}
+
+/* Tablet styles for screens between 768px and 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    max-width: 90%;
+  }
+  
+  .containersmall {
+    width: 90%;
+    max-width: 90%;
+  }
+  
+  /* Main banner table */
+  table[style*="max-width:900px"] {
+    width: 90% !important;
+    max-width: 90% !important;
+  }
+  
+  /* Paper container adjustments */
+  .paper {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+/* Ensure tables don't break layout on small screens */
+@media screen and (max-width: 767px) {
+  table {
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+  
+  /* Hide some decorative elements on very small screens if needed */
+  hr {
+    margin: 15px 0;
+  }
+}
+
+/* Print styles - maintain original layout */
+@media print {
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .containersmall {
+    width: 100%;
+    max-width: none;
+  }
+}
