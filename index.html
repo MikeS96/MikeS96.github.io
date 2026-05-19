@@ -138,7 +138,10 @@
                     <div class="news-list">
                     <ul>
                       <li>
-                        <span style="color:#ff0000"><strong>[May 2026]</strong></span> I will be joining the <a href="https://research.nvidia.com/labs/srl/">Seattle Robotics Lab (SRL) @ NVIDIA</a> as a Research Intern where I will be working with <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a> and <a href="https://research.nvidia.com/person/anqi-li">Anqi Li</a>.
+                        <span style="color:#ff0000"><strong>[May 2026]</strong></span> I am joining the <a href="https://research.nvidia.com/labs/srl/">Seattle Robotics Lab (SRL) @ NVIDIA</a> as a Research Intern where I will be working with <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a> and <a href="https://research.nvidia.com/person/anqi-li">Anqi Li</a>.
+                      </li>
+                      <li>
+                        <span style="color:#ff0000"><strong>[May 2026]</strong></span> The 2nd Workshop on <a href="https://mit-spark.github.io/Longterm-Perception-WS/">"Long-Term Perception for Human-Centric Autonomy (LTP): Towards Undo for the Physical World"</a> has been accepted at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026) - See you in Pittsburgh!
                       </li>
                       <li>
                         <strong>[Jun 2025]</strong> The paper
@@ -320,6 +323,76 @@
                   <td></td>
                 </tr>
 
+                <!-- PredictiveGraphs -->
+                <tr onmouseout="predictive_real_stop()" onmouseover="predictive_real_start()">
+                  <td
+                      style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                    <div class="aligned">
+                      <div class="two" id='predictive_real_seg'>
+                        <img src='images/predictive_after.gif' width="160">
+                      </div>
+                      <img src='images/predictive_before.png' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function predictive_real_start() {
+                        document.getElementById('predictive_real_seg').style.opacity = "1";
+                      }
+
+                      function predictive_real_stop() {
+                        document.getElementById('predictive_real_seg').style.opacity = "0";
+                      }
+                      flowmaps_real_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2605.00121">
+                      <papertitle>Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes
+                      </papertitle>
+                    </a>
+                    <br>
+                    <strong>Miguel Saavedra-Ruiz &#42;</strong>,
+                    <a href="https://charliegauthier.ca/">Charlie Gauthier &#42;</a>,
+                    <a href="https://www.kumaradityag.com/">Kumaraditya Gupta</a>,
+                    <a href="https://www.linkedin.com/in/shima-shahfar/">Shima Shahfar</a>,
+                    <a href="https://mila.quebec/en/directory/kirsty-ellis">Kirsty Ellis</a>, <br>
+                    <a href="https://www.linkedin.com/in/steven-parkison-823702233/">Steven Parkison</a>,
+                    <a href="https://liampaull.ca/">Liam Paull</a>
+                    <br>
+                    <span class="tag-preprint">[Preprint]</span>                            
+                    <!-- <em>Perception and Planning for Mobile Manipulation in Changing Environments @ IROS</em>, 2025 &nbsp  -->
+                    <br>
+                    <div class="paper" id="flowmaps_real">
+                      <a href="https://arxiv.org/abs/2605.00121"> arXiv </a> /
+                      <a href="javascript:togglebib('flowmaps_real')" class="togglebib">bibtex</a>
+                      <div class="bibtex-container">
+                        <pre id="flowmaps_real_bib" class="bibtex" xml:space="preserve">
+@article{saavedra2026predictive,
+	title        = {Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes},
+	author       = {Saavedra-Ruiz, Miguel and Gauthier, Charlie and Gupta, Kumaraditya and Shahfar, Shima and Ellis, Kirsty and Parkison, Steven and Paull, Liam},
+	year         = 2026,
+	journal      = {Preprint}
+} </pre>
+                      </div>
+                    </div>
+                    <p></p>
+                    <div class="paper" id="flowmaps_real_description">
+                      <h6><a href="javascript:togglebib('flowmaps_real_description')" class="togglebib">
+                        A tempo-spatio-semantic scene graph with predictive capabilities for semi-static environments.
+                      </a></h6>
+                      <div class="abstract-container">
+                        <div class="abstract-header">Abstract</div>
+                        <div class="abstract">
+We have seen tremendous recent progress in our ability to build "spatio-semantic" representations that enable robots to perform complex reasoning across geometry and semantics. However, the vast majority of these methods lack any ability to perform reasoning across time. This is a desirable property in situations where a robot repeatedly observes an environment where instances may change in between observations, but in a structured way. Consider as an example a home environment where the location of a mug typically moves from the cupboard to a countertop to the sink and then back to the cupboard on a daily basis. We should be able to learn this cyclic behavior and use it to predict the state of the mug in the future. In this work, we propose a method that is able to perform this type of tempo-spatio-semantic reasoning. Underpinning the method is a filter, Perpetua*, that performs Bayesian reasoning on the states of the environment that are observed over time. This filter is integrated within a 3D scene graph structure that we call PredictiveGraphs, where nodes represent objects and edges function as Perpetua* filters encoding spatio-semantic relationships. We validate the method in both simulation and real-world dynamic navigation tasks, where our real world experiments consist of an environment that is undergoing semi-static changes at a bi-hourly frequency over a period of three weeks. In both settings, we demonstrate that our method outperforms baselines in predicting future environment states, even in the presence of distributional shifts.                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Break of line-->
+                <tr>
+                  <td colspan="2" style="padding:0; margin:0;">
+                    <hr style="padding:0; margin:0;">
+                  </td>
+                </tr>
 
                 <!-- Flow-Maps -->
                 <tr onmouseout="flowmaps_real_stop()" onmouseover="flowmaps_real_start()">
@@ -422,7 +495,7 @@ Task and motion planning are long-standing challenges in robotics, especially wh
                     <br>
                     <strong>Miguel Saavedra-Ruiz</strong>,
                     <a href="https://samernashed.github.io/">Samer B. Nashed</a>,
-                    <a href="https://velythyl.github.io/">Charlie Gauthier</a>,
+                    <a href="https://charliegauthier.ca/">Charlie Gauthier</a>,
                     <a href="https://liampaull.ca/">Liam Paull</a>
                     <br>
                     <span class="tag-conference">[Conference]</span>                            
@@ -944,7 +1017,7 @@ Aerial robotic applications need to be endowed with systems capable to accuratel
               <tr>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%">
                   <p style="color:#333">
-                    <strong>Updated</strong> May 2025
+                    <strong>Updated</strong> May 2026
                   </p>
                 </td>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align:right">
