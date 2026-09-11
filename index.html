@@ -3,77 +3,112 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5E8CNQPMC"></script>
-  <script type="text/javascript" src="hidebib.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
-  <!-- Academicons -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
-  <!-- TO HAVE ICONS -->
+  <title>Miguel Saavedra-Ruiz | Robotics and Embodied AI, Mila and Universite de Montreal</title>
+  <meta name="author" content="Miguel Saavedra-Ruiz">
+  <meta name="description"
+    content="Miguel Saavedra-Ruiz is a PhD student at Universite de Montreal and Mila in the Robotics and Embodied AI Lab, researching dynamic scene understanding and world modeling for embodied AI.">
+  <link rel="canonical" href="https://mikes96.github.io/">
+
+  <!-- Social previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mikes96.github.io/">
+  <meta property="og:title" content="Miguel Saavedra-Ruiz">
+  <meta property="og:description"
+    content="PhD student at Universite de Montreal and Mila, researching dynamic scene understanding and world modeling for embodied AI.">
+  <meta property="og:image" content="https://mikes96.github.io/images/miguel_circle.png">
+  <meta property="og:image:alt" content="Portrait of Miguel Saavedra-Ruiz">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Miguel Saavedra-Ruiz">
+  <meta name="twitter:description"
+    content="PhD student at Universite de Montreal and Mila, researching dynamic scene understanding and world modeling for embodied AI.">
+  <meta name="twitter:image" content="https://mikes96.github.io/images/miguel_circle.png">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#129302;</text></svg>">
+
+  <!-- Icon fonts -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Style -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <script src="hidebib.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Miguel Saavedra-Ruiz",
+    "url": "https://mikes96.github.io/",
+    "image": "https://mikes96.github.io/images/miguel_circle.png",
+    "jobTitle": "PhD Student",
+    "email": "mailto:miguel.angel.saavedra.ruiz@umontreal.ca",
+    "affiliation": [
+      { "@type": "Organization", "name": "Mila - Quebec AI Institute", "url": "https://mila.quebec/en/" },
+      { "@type": "Organization", "name": "Universite de Montreal", "url": "https://diro.umontreal.ca/accueil/" }
+    ],
+    "alumniOf": { "@type": "Organization", "name": "Universidad Autonoma de Occidente", "url": "https://www.uao.edu.co/" },
+    "knowsAbout": ["Robotics", "Embodied AI", "Computer Vision", "Scene Understanding", "World Models"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=tK9Tln0AAAAJ&hl=en",
+      "https://github.com/MikeS96",
+      "https://www.linkedin.com/in/miguel-saavedra-ruiz",
+      "https://twitter.com/miguelSaaRuiz"
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5E8CNQPMC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-E5E8CNQPMC');
   </script>
-
-  <title>Miguel Saavedra-Ruiz</title>
-
-  <meta name="author" content="Miguel Saavedra-Ruiz">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords"
-    content="Miguel, Saavedra, Saavedra-Ruiz, Robotics, Robot, Deep, Learning, Reinforcement, Computer, Vision, Self-Driving, Vehicles, Mobile, Sensor, Fusion">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
-  <meta property="og:type" content="website"/>
 </head>
 
 <body>
 
   <!-- Banner -->
   <table
-    style="width:100%;max-width:900px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    class="page" style="width:100%;max-width:1024px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr style="padding: 0;">
         <td style="padding:0">
 
-          <div class="containersmall">
+          <nav class="containersmall" id="sitenav">
             <table
-              style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tr style="padding:0">
-                <td style="padding:1.5%;width:16%;vertical-align:middle;text-align:center">
+                <td style="padding:1.5%;width:25%;vertical-align:middle;text-align:center">
                   <a href="index.html" target="_self" style="font-size:22px">About me</a>
                 </td>
-                <td style="padding:1.5%;width:16%;vertical-align:middle;text-align:center">
+                <td style="padding:1.5%;width:25%;vertical-align:middle;text-align:center">
                   <a href="#news" target="_self" style="font-size:22px">News</a>
                 </td>
-                <td style="padding:1.5%;width:16%;vertical-align:middle;text-align:center">
-                  <a href="#pub_sec" target="_self" style="font-size:22px">Publications</a>
+                <td style="padding:1.5%;width:25%;vertical-align:middle;text-align:center">
+                  <a href="#pub_sec" target="_self" style="font-size:22px">Featured Work</a>
+                </td>
+                <td style="padding:1.5%;width:25%;vertical-align:middle;text-align:center">
+                  <a href="#proj_sec" target="_self" style="font-size:22px">Publications</a>
                 </td>
               </tr>
             </table>
-          </div>
+          </nav>
           <br>
 
           <!-- Intro -->
-          <div class="containersmall">
+          <div class="containersmall" id="intro">
             <table
               style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr style="padding:0">
                   <td
                     style="padding-top:1%;padding-bottom:1%;padding-left:4%;padding-right:4%;width:67%;vertical-align:middle">
-                    <p style="text-align:center">
-                      <name>Miguel Saavedra-Ruiz</name>
-                    </p>
+                    <h1 class="name">Miguel Saavedra-Ruiz</h1>
                     <p>
                       I am a PhD student at <a href="https://diro.umontreal.ca/accueil/">Université de Montréal</a>
                       and <a href="https://mila.quebec/en/"> Mila</a>, under the supervision of
@@ -112,7 +147,8 @@
                   </td>
                   <td style="padding:2.5%;width:33%;max-width:33%">
                     <a href="https://www.linkedin.com/in/miguel-saavedra-ruiz"><img style="width:100%;max-width:100%"
-                        alt="profile photo" src="images/miguel_circle.png" class="hoverZoomLink"></a>
+                        alt="Portrait of Miguel Saavedra-Ruiz" src="images/miguel_circle.png" class="hoverZoomLink"
+                        width="330" height="330"></a>
                   </td>
                 </tr>
               </tbody>
@@ -130,9 +166,7 @@
                     style="padding-top:1%;padding-bottom:2%;padding-left:4%;padding-right:4%;width:100%;vertical-align:middle">
                     <!-- Fixed header -->
                     <div class="news-header" style="margin-bottom: 20px;">
-                      <p style="text-align:center">
-                        <heading>News</heading>
-                      </p>
+                      <h2 class="heading">News</h2>
                     </div>
                     <!-- Scrollable list -->
                     <div class="news-list">
@@ -145,7 +179,7 @@
                       </li>
                       <li>
                         <strong>[Jun 2025]</strong> The paper
-                        <a href="https://montrealrobotics.ca/perpetua/">"Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments"</a> has been accepted for publication at the IEEE/RSJ International Conference on Intelligent Robots and Systems <a href="http://www.iros25.org">(IROS 2025)</a>!
+                        <a href="https://montrealrobotics.ca/perpetua/">"Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments"</a> has been accepted for publication at the IEEE/RSJ International Conference on Intelligent Robots and Systems <a href="https://www.iros25.org">(IROS 2025)</a>!
                       </li>
                       <li>
                         <strong>[Jan 2025]</strong> The paper
@@ -158,7 +192,7 @@
                       </li> -->
                       <li>
                         <strong>[Aug 2024]</strong> The paper
-                        "The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups"</a> has been submitted
+                        <a href="https://arxiv.org/abs/2408.00907">"The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups"</a> has been submitted
                         for review in the journal <a href="https://www.ieee-ras.org/publications/ra-l">IEEE Robotics and Automation Letters (RA-L)</a>.
                       </li>
                       <li>
@@ -270,7 +304,7 @@
                           with
                           machine learning</a> was accepted to the <a
                           href="https://www.latinxinai.org/cvpr-2021-about">LatinX in AI Research Workshop</a> at <a
-                          href="http://cvpr2021.thecvf.com/">CVPR</a>, 2021 as a poster presentation.
+                          href="https://cvpr2021.thecvf.com/">CVPR</a>, 2021 as a poster presentation.
                       </li> -->
 <!--                      <li>-->
 <!--                        <strong>[December 2020]</strong> I am joining the <a href="https://whaleandjaguar.co/">Whale &-->
@@ -308,9 +342,7 @@
               <tbody>
                 <tr>
                   <td colspan="2" style="padding:1%;width:100%">
-                    <p style="text-align:center">
-                      <heading>Featured Work</heading>
-                    </p>
+                    <h2 class="heading">Featured Work</h2>
                   </td>
                   <td></td>
                 </tr>
@@ -329,9 +361,9 @@
                       style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="aligned">
                       <div class="two" id='predictive_real_seg'>
-                        <img src='images/predictive_after.gif' width="160">
+                        <img src='images/predictive_after.gif' width="160" alt="" loading="lazy">
                       </div>
-                      <img src='images/predictive_before.png' width="160">
+                      <img src='images/predictive_before.png' width="160" alt="Figure from the paper Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes" loading="lazy">
                     </div>
                     <script type="text/javascript">
                       function predictive_real_start() {
@@ -346,8 +378,8 @@
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://arxiv.org/abs/2605.00121">
-                      <papertitle>Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes
-                      </papertitle>
+                      <span class="papertitle">Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes
+                      </span>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz &#42;</strong>,
@@ -378,9 +410,9 @@
                     </div>
                     <p></p>
                     <div class="paper" id="predictive_real_description">
-                      <h6><a href="javascript:togglebib('predictive_real_description')" class="togglebib">
+                      <div class="tldr"><a href="javascript:togglebib('predictive_real_description')" class="togglebib">
                         A tempo-spatio-semantic scene graph with predictive capabilities for semi-static environments.
-                      </a></h6>
+                      </a></div>
                       <div class="abstract-container">
                         <div class="abstract-header">Abstract</div>
                         <div class="abstract">
@@ -402,9 +434,9 @@ We have seen tremendous recent progress in our ability to build "spatio-semantic
                       style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="aligned">
                       <div class="two" id='flowmaps_real_seg'>
-                        <img src='images/flowmaps_after.gif' width="160">
+                        <img src='images/flowmaps_after.gif' width="160" alt="" loading="lazy">
                       </div>
-                      <img src='images/flowmaps_before.png' width="160">
+                      <img src='images/flowmaps_before.png' width="160" alt="Figure from the paper Dynamic Objects Relocalization in Changing Environments with Flow Matching" loading="lazy">
                     </div>
                     <script type="text/javascript">
                       function flowmaps_real_start() {
@@ -419,8 +451,8 @@ We have seen tremendous recent progress in our ability to build "spatio-semantic
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://arxiv.org/abs/2509.16398">
-                      <papertitle>Dynamic Objects Relocalization in Changing Environments with Flow Matching
-                      </papertitle>
+                      <span class="papertitle">Dynamic Objects Relocalization in Changing Environments with Flow Matching
+                      </span>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz &#42;</strong>,
@@ -450,9 +482,9 @@ We have seen tremendous recent progress in our ability to build "spatio-semantic
                     </div>
                     <p></p>
                     <div class="paper" id="flowmaps_real_description">
-                      <h6><a href="javascript:togglebib('flowmaps_real_description')" class="togglebib">
+                      <div class="tldr"><a href="javascript:togglebib('flowmaps_real_description')" class="togglebib">
                         A Flow Matching–based model that exploits human–object interaction patterns to predict multimodal object locations in dynamic environments.
-                      </a></h6>
+                      </a></div>
                       <div class="abstract-container">
                         <div class="abstract-header">Abstract</div>
                         <div class="abstract">
@@ -476,9 +508,9 @@ Task and motion planning are long-standing challenges in robotics, especially wh
                       style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="aligned">
                       <div class="two" id='perpetua_real_seg'>
-                        <img src='images/perpetua_after.gif' width="160">
+                        <img src='images/perpetua_after.gif' width="160" alt="" loading="lazy">
                       </div>
-                      <img src='images/perpetua_before.png' width="160">
+                      <img src='images/perpetua_before.png' width="160" alt="Figure from the paper Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments" loading="lazy">
                     </div>
                     <script type="text/javascript">
                       function perpetua_real_start() {
@@ -493,8 +525,8 @@ Task and motion planning are long-standing challenges in robotics, especially wh
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://montrealrobotics.ca/perpetua/">
-                      <papertitle>Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments
-                      </papertitle>
+                      <span class="papertitle">Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments
+                      </span>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz</strong>,
@@ -523,9 +555,9 @@ Task and motion planning are long-standing challenges in robotics, especially wh
                     </div>
                     <p></p>
                     <div class="paper" id="perpetua_real_description">
-                      <h6><a href="javascript:togglebib('perpetua_real_description')" class="togglebib">
+                      <div class="tldr"><a href="javascript:togglebib('perpetua_real_description')" class="togglebib">
                         An efficient method to estimate and predict feature persistence in semi-static environments. 
-                      </a></h6>
+                      </a></div>
                       <div class="abstract-container">
                         <div class="abstract-header">Abstract</div>
                         <div class="abstract">
@@ -548,9 +580,9 @@ Many robotic systems require extended deployments in complex, dynamic environmen
                       style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="aligned">
                       <div class="two" id='hef_real_seg'>
-                        <img src='images/hef_after.gif' width="160">
+                        <img src='images/hef_after.gif' width="160" alt="" loading="lazy">
                       </div>
-                      <img src='images/hef_before.png' width="160">
+                      <img src='images/hef_before.png' width="160" alt="Figure from the paper The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups" loading="lazy">
                     </div>
                     <script type="text/javascript">
                       function hef_real_start() {
@@ -565,8 +597,8 @@ Many robotic systems require extended deployments in complex, dynamic environmen
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://montrealrobotics.ca/hef/">
-                      <papertitle>The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups
-                      </papertitle>
+                      <span class="papertitle">The Harmonic Exponential Filter for Nonparametric Estimation on Motion Groups
+                      </span>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz</strong>,
@@ -604,16 +636,15 @@ Many robotic systems require extended deployments in complex, dynamic environmen
                     </div>
                     <p></p>
                     <div class="paper" id="hef_real_description">
-                      <h6><a href="javascript:togglebib('hef_real_description')" class="togglebib">
+                      <div class="tldr"><a href="javascript:togglebib('hef_real_description')" class="togglebib">
                          A nonparametric and multimodal filtering approach that leverages harmonic exponential distributions.
-                      </a></h6>
+                      </a></div>
                       <div class="abstract-container">
                         <div class="abstract-header">Abstract</div>
                         <div class="abstract">
 Bayesian estimation is a vital tool in robotics as it allows systems to update the robot state belief using incomplete information from noisy sensors. To render the state estimation problem tractable, many systems assume that the motion and measurement noise, as well as the state distribution, are all unimodal and Gaussian. However, there are numerous scenarios and systems that do not comply with these assumptions. Existing nonparametric filters that are used to model multimodal distributions have drawbacks that limit their ability to represent a diverse set of distributions. This paper introduces a novel approach to nonparametric Bayesian filtering on motion groups, designed to handle multimodal distributions using harmonic exponential distributions. This approach leverages two key insights of harmonic exponential distributions: a) the product of two distributions can be expressed as the element-wise addition of their log-likelihood Fourier coefficients, and b) the convolution of two distributions can be efficiently computed as the tensor product of their Fourier coefficients. These observations enable the development of an efficient and asymptotically exact solution to the Bayes filter up to the band limit of a Fourier transform. We demonstrate our filter's superior performance compared with established nonparametric filtering methods across a range of simulated and real-world localization tasks.
                         </div>
                       </div>
-                    </div>
                     </div>
                   </td>
                 </tr>
@@ -630,9 +661,9 @@ Bayesian estimation is a vital tool in robotics as it allows systems to update t
                       style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="aligned">
                       <div class="two" id='o4a_real_seg'>
-                        <img src='images/o4a_real_after.gif' width="160">
+                        <img src='images/o4a_real_after.gif' width="160" alt="" loading="lazy">
                       </div>
-                      <img src='images/o4a_real_before.png' width="160">
+                      <img src='images/o4a_real_before.png' width="160" alt="Figure from the paper One-4-All: Neural Potential Fields for Embodied Navigation" loading="lazy">
                     </div>
                     <script type="text/javascript">
                       function o4a_real_start() {
@@ -647,8 +678,8 @@ Bayesian estimation is a vital tool in robotics as it allows systems to update t
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://montrealrobotics.ca/o4a/">
-                      <papertitle>One-4-All: Neural Potential Fields for Embodied Navigation
-                      </papertitle>
+                      <span class="papertitle">One-4-All: Neural Potential Fields for Embodied Navigation
+                      </span>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz &#42;</strong>,
@@ -678,15 +709,14 @@ Bayesian estimation is a vital tool in robotics as it allows systems to update t
                     </div>
                     <p></p>
                     <div class="paper" id="o4a_real_description">
-                      <h6><a href="javascript:togglebib('o4a_real_description')" class="togglebib">An end-to-end fully
-                        parametric method for image-goal navigation that leverages self-supervised and manifold learning to replace a topological graph with a geodesic regressor. During navigation, the geodesic regressor is used as an attractor in a potential function defined in latent space, allowing to frame navigation as a minimization problem.</a></h6>
+                      <div class="tldr"><a href="javascript:togglebib('o4a_real_description')" class="togglebib">An end-to-end fully
+                        parametric method for image-goal navigation that leverages self-supervised and manifold learning to replace a topological graph with a geodesic regressor. During navigation, the geodesic regressor is used as an attractor in a potential function defined in latent space, allowing to frame navigation as a minimization problem.</a></div>
                       <div class="abstract-container">
                         <div class="abstract-header">Abstract</div>
                         <div class="abstract">
 A fundamental task in robotics is to navigate between two locations. In particular, real-world navigation can require long-horizon planning using high-dimensional RGB images, which poses a substantial challenge for end-to-end learning-based approaches. Current semi-parametric methods instead achieve long-horizon navigation by combining learned modules with a topological memory of the environment, often represented as a graph over previously collected images. However, using these graphs in practice typically involves tuning a number of pruning heuristics to avoid spurious edges, limit runtime memory usage and allow reasonably fast graph queries. In this work, we present One-4-All (O4A), a method leveraging self-supervised and manifold learning to obtain a graph-free, end-to-end navigation pipeline in which the goal is specified as an image. Navigation is achieved by greedily minimizing a potential function defined continuously over the O4A latent space. Our system is trained offline on non-expert exploration sequences of RGB data and controls, and does not require any depth or pose measurements. We show that O4A can reach long-range goals in 8 simulated Gibson indoor environments, and further demonstrate successful real-world navigation using a Jackal UGV platform.
                         </div>
                       </div>
-                    </div>
                     </div>
                   </td>
                 </tr>
@@ -705,9 +735,7 @@ A fundamental task in robotics is to navigate between two locations. In particul
 
                 <tr>
                   <td colspan="2" style="padding:2%;width:100%">
-                    <p style="text-align:center">
-                      <heading>Publications</heading>
-                    </p>
+                    <h2 class="heading">Publications</h2>
                   </td>
                   <td></td>
                 </tr>
@@ -718,9 +746,9 @@ A fundamental task in robotics is to navigate between two locations. In particul
                           style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='dino_real_seg'>
-                        <img src='images/dino_real_after.gif' width="160">
+                        <img src='images/dino_real_after.gif' width="160" alt="" loading="lazy">
                       </div>
-                      <img src='images/dino_real_before.jpg' width="160">
+                      <img src='images/dino_real_before.jpg' width="160" alt="Figure from the paper Monocular Robot Navigation with Self-Supervised Pretrained Vision Transformers" loading="lazy">
                     </div>
                     <script type="text/javascript">
                       function dino_real_start() {
@@ -735,8 +763,8 @@ A fundamental task in robotics is to navigate between two locations. In particul
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://sachamorin.github.io/dino/">
-                      <papertitle>Monocular Robot Navigation with Self-Supervised Pretrained Vision Transformers
-                      </papertitle>
+                      <span class="papertitle">Monocular Robot Navigation with Self-Supervised Pretrained Vision Transformers
+                      </span>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz &#42</strong>,
@@ -772,14 +800,13 @@ A fundamental task in robotics is to navigate between two locations. In particul
                     </div>
                     <p></p>
                     <div class="paper" id="dino_real_description">
-                      <h6><a href="javascript:togglebib('dino_real_description')" class="togglebib">Visual Servoing navigation using pre-trained Self-Supervised Vision Transformers.</a></h6>
+                      <div class="tldr"><a href="javascript:togglebib('dino_real_description')" class="togglebib">Visual Servoing navigation using pre-trained Self-Supervised Vision Transformers.</a></div>
                       <div class="abstract-container">
                         <div class="abstract-header">Abstract</div>
                         <div class="abstract">
 In this work, we consider the problem of learning a perception model for monocular robot navigation using few annotated images. Using a Vision Transformer (ViT) pretrained with a label-free self-supervised method, we successfully train a coarse image segmentation model for the Duckietown environment using 70 training images. Our model performs coarse image segmentation at the 8x8 patch level, and the inference resolution can be adjusted to balance prediction granularity and real-time perception constraints. We study how best to adapt a ViT to our task and environment, and find that some lightweight architectures can yield good single-image segmentations at a usable frame rate, even on CPU. The resulting perception model is used as the backbone for a simple yet robust visual servoing agent, which we deploy on a differential drive mobile robot to perform two tasks: lane following and obstacle avoidance.
                         </div>
                       </div>
-                    </div>
                     </div>
                   </td>
                 </tr>
@@ -796,9 +823,9 @@ In this work, we consider the problem of learning a perception model for monocul
                           style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='dals_image'>
-                        <img src='images/gazebo_dron_after.gif' width="160">
+                        <img src='images/gazebo_dron_after.gif' width="160" alt="" loading="lazy">
                       </div>
-                      <img src='images/gazebo_dron_before.png' width="160">
+                      <img src='images/gazebo_dron_before.png' width="160" alt="Figure from the paper Monocular visual autonomous landing system for quadcopter drones" loading="lazy">
                     </div>
                     <script type="text/javascript">
                       function dals_start() {
@@ -813,9 +840,9 @@ In this work, we consider the problem of learning a perception model for monocul
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://github.com/MikeS96/autonomous_landing_uav">
-                      <papertitle>
+                      <span class="papertitle">
                         Monocular visual autonomous landing system for quadcopter drones using software in the loop
-                      </papertitle>
+                      </span>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz</strong>,
@@ -849,18 +876,18 @@ In this work, we consider the problem of learning a perception model for monocul
                       </div>
                       <p></p>
                       <div class="paper" id="dals_description">
-                        <h6><a href="javascript:togglebib('dals_description')" class="togglebib">Autonomous landing
+                        <div class="tldr"><a href="javascript:togglebib('dals_description')" class="togglebib">Autonomous landing
                           system for a UAV on a terrestrial vehicle using robotics vision and control.</a>
-                        </h6>
+                        </div>
                         <div class="abstract-container">
                           <div class="abstract-header">Abstract</div>
                           <div class="abstract">
-My BEng degree project addressed the problem of the autonomous landing of a UAV with a landing platform located on the top of a ground vehicle. The project utilized vision-based techniques to detect the landing platform, a Kalman filter was tailored for the tracking phase and finally, a PID controller sent control commands to the flight controller of the UAV to land properly on the platform. Rigorous assessments were conducted through the simulation of the whole robotic stack with ROS and gazebo in the software in the loop provided by PX4. Ultimately, the system was tested in a custom DJI F-450 and embedded in a Odroid XU4. The system demonstrates a satisfactory performance and was able to land with a mean error of ten centimeters from the center of the landing platform (Implemented in Python, C++/Linux). Autonomous landing is a capability that is essential to achieve the full potential of multi-rotor drones in many social and industrial applications. The implementation and testing of this capability on physical platforms is risky and resource-intensive; hence, in order to ensure both a sound design process and a safe deployment, simulations are required before implementing a physical prototype. This paper presents the development of a monocular visual system, using a software-in-the-loop methodology, that autonomously and efficiently lands a quadcopter drone on a predefined landing pad, thus reducing the risks of the physical testing stage. In addition to ensuring that the autonomous landing system as a whole fulfils the design requirements using a Gazebo-based simulation, our approach provides a tool for safe parameter tuning and design testing prior to physical implementation. Finally, the proposed monocular vision-only approach to landing pad tracking made it possible to effectively implement the system in an F450 quadcopter drone with the standard computational capabilities of an Odroid XU4 embedded processor.
+<p>My BEng degree project addressed the problem of the autonomous landing of a UAV with a landing platform located on the top of a ground vehicle. The project utilized vision-based techniques to detect the landing platform, a Kalman filter was tailored for the tracking phase and finally, a PID controller sent control commands to the flight controller of the UAV to land properly on the platform. Rigorous assessments were conducted through the simulation of the whole robotic stack with ROS and gazebo in the software in the loop provided by PX4. Ultimately, the system was tested in a custom DJI F-450 and embedded in a Odroid XU4. The system demonstrates a satisfactory performance and was able to land with a mean error of ten centimeters from the center of the landing platform (Implemented in Python, C++/Linux).</p>
+<p>Autonomous landing is a capability that is essential to achieve the full potential of multi-rotor drones in many social and industrial applications. The implementation and testing of this capability on physical platforms is risky and resource-intensive; hence, in order to ensure both a sound design process and a safe deployment, simulations are required before implementing a physical prototype. This paper presents the development of a monocular visual system, using a software-in-the-loop methodology, that autonomously and efficiently lands a quadcopter drone on a predefined landing pad, thus reducing the risks of the physical testing stage. In addition to ensuring that the autonomous landing system as a whole fulfils the design requirements using a Gazebo-based simulation, our approach provides a tool for safe parameter tuning and design testing prior to physical implementation. Finally, the proposed monocular vision-only approach to landing pad tracking made it possible to effectively implement the system in an F450 quadcopter drone with the standard computational capabilities of an Odroid XU4 embedded processor.</p>
                           </div>
                         </div>
                       </div>
                       </div>
-                    </div>
                   </td>
                 </tr>
                 <!-- Break of line-->
@@ -876,9 +903,9 @@ My BEng degree project addressed the problem of the autonomous landing of a UAV 
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='ml3d_image'>
-                        <img src='images/3d_after.gif' width="160">
+                        <img src='images/3d_after.gif' width="160" alt="" loading="lazy">
                       </div>
-                      <img src='images/3d_before.png' width="160">
+                      <img src='images/3d_before.png' width="160" alt="Figure from the paper 3D object detector for vehicles using classic Machine Learning" loading="lazy">
                     </div>
                     <script type="text/javascript">
                       function ml3d_start() {
@@ -893,7 +920,7 @@ My BEng degree project addressed the problem of the autonomous landing of a UAV 
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://github.com/MikeS96/3d_obj_detection">
-                      <papertitle>3D object detector for vehicles using classic Machine Learning</papertitle>
+                      <span class="papertitle">3D object detector for vehicles using classic Machine Learning</span>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz &#42</strong>,
@@ -922,9 +949,9 @@ My BEng degree project addressed the problem of the autonomous landing of a UAV 
                       <p></p>
 
                       <div class="paper" id="ml3d_description">
-                        <h6><a href="javascript:togglebib('ml3d_description')" class="togglebib">3D object detection of
+                        <div class="tldr"><a href="javascript:togglebib('ml3d_description')" class="togglebib">3D object detection of
                             vehicles in the NuScenes dataset using classic Machine learning such as DBSCAN and SVMs.</a>
-                        </h6>
+                        </div>
                         <div class="abstract-container">
                           <div class="abstract-header">Abstract</div>
                           <div class="abstract">
@@ -933,7 +960,6 @@ My BEng degree project addressed the problem of the autonomous landing of a UAV 
                         </div>
                       </div>
                       </div>
-                    </div>
                   </td>
                 </tr>
                 <!-- Break of line-->
@@ -949,9 +975,9 @@ My BEng degree project addressed the problem of the autonomous landing of a UAV 
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='dtl_image'>
-                        <img src='images/detection_ccra_after.png' width="160">
+                        <img src='images/detection_ccra_after.png' width="160" alt="" loading="lazy">
                       </div>
-                      <img src='images/detection_ccra_before.png' width="160">
+                      <img src='images/detection_ccra_before.png' width="160" alt="Figure from the paper Detection and tracking of a landing platform for aerial robotics applications" loading="lazy">
                     </div>
                     <script type="text/javascript">
                       function dtl_start() {
@@ -966,8 +992,8 @@ My BEng degree project addressed the problem of the autonomous landing of a UAV 
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://github.com/MikeS96/autonomous_landing_uav/tree/master/object_detector">
-                      <papertitle>Detection and tracking of a landing platform for aerial robotics applications
-                      </papertitle>
+                      <span class="papertitle">Detection and tracking of a landing platform for aerial robotics applications
+                      </span>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz</strong>,
@@ -996,8 +1022,8 @@ My BEng degree project addressed the problem of the autonomous landing of a UAV 
                       </div>
                       <p></p>
                       <div class="paper" id="dtl_description">
-                        <h6><a href="javascript:togglebib('dtl_description')" class="togglebib">Object Detection and
-                            tracking pipelines to detect a landing pad on the ground from a UAV.</a></h6>
+                        <div class="tldr"><a href="javascript:togglebib('dtl_description')" class="togglebib">Object Detection and
+                            tracking pipelines to detect a landing pad on the ground from a UAV.</a></div>
                         <div class="abstract-container">
                           <div class="abstract-header">Abstract</div>
                           <div class="abstract">
@@ -1015,7 +1041,7 @@ Aerial robotic applications need to be endowed with systems capable to accuratel
           <br>
 
           <!-- Acknowledgements -->
-          <table
+          <table class="site-footer"
             style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
@@ -1036,8 +1062,8 @@ Aerial robotic applications need to be endowed with systems capable to accuratel
         </td>
       </tr>
   </table>
-  <script xml:space="preserve" language="JavaScript">
-    hideallbibs();
+  <script>
+    document.addEventListener('DOMContentLoaded', function () { hideallbibs(); });
   </script>
 </body>
 
