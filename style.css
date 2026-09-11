@@ -335,6 +335,11 @@ news-box {
   font-weight: bold;
 }
 
+.tag-award {
+  color: #b06a00;
+  font-weight: bold;
+}
+
 /* Abstract container styling */
 .abstract-container {
   position: relative;
