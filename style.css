@@ -68,7 +68,7 @@
 html { -webkit-text-size-adjust: 100%; }
 p { margin: 0 0 10px; }
 ul, ol { margin-top: 0; margin-bottom: 10px; }
-img { border: 0; vertical-align: middle; max-width: 100%; }
+img { border: 0; vertical-align: middle; max-width: 100%; height: auto; }
 hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #eee; }
 pre { margin: 0 0 10px; }
 b, strong { font-weight: 700; }
@@ -443,10 +443,15 @@ news-box {
 
   .containersmall,
   .container {
-    padding: 1em 1.1em;
+    padding: 1.1em 1.1em 1.3em;
   }
 
-  #intro table, #intro tbody, #intro tr, #intro td,
+  /* a touch larger than the desktop 14px, which is cramped on a phone */
+  body, td, th, tr, p, a, strong {
+    font-size: 15px;
+  }
+
+  #intro table, #intro tbody, #intro td,
   #news table, #news tbody, #news tr, #news td,
   #pub_sec table, #pub_sec tbody, #pub_sec tr, #pub_sec td,
   #proj_sec table, #proj_sec tbody, #proj_sec tr, #proj_sec td,
@@ -475,40 +480,96 @@ news-box {
 
   #sitenav a { font-size: 17px !important; }
 
+  /* portrait leads, then the name and bio */
+  #intro tr {
+    display: flex;
+    flex-direction: column;
+  }
+
   #intro td {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 
-  /* portrait sits under the bio rather than beside it */
   #intro tr > td:last-child {
+    order: -1;
     text-align: center;
-    padding-top: 1.2em !important;
+    padding-bottom: 1.1em !important;
   }
 
   #intro .hoverZoomLink {
-    width: 230px !important;
-    max-width: 70% !important;
+    width: 165px !important;
+    max-width: 50% !important;
   }
 
-  #news td,
-  #pub_sec td,
-  #proj_sec td {
-    padding-top: 0.6em !important;
-    padding-bottom: 0.6em !important;
+  .name { margin-top: 0; }
+
+  /* the trailing envelope is decorative and crowds the address */
+  #intro a[href^="mailto"] i:last-child { display: none; }
+
+  /* news entries need air, and the clipped edge should look deliberate */
+  #news td { padding-top: 0.4em !important; padding-bottom: 0.2em !important; }
+
+  #news li { margin-bottom: 0.85em; }
+
+  .news-list {
+    height: auto;
+    max-height: 46vh;
+    -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 26px), transparent);
+    mask-image: linear-gradient(to bottom, #000 calc(100% - 26px), transparent);
+  }
+
+  /* thumbnails read as figures rather than stamps */
+  #pub_sec td, #proj_sec td {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.9em !important;
+  }
+
+  #pub_sec .heading, #proj_sec .heading { margin-bottom: 2px; }
+
+  #pub_sec .one, #pub_sec .aligned,
+  #proj_sec .one, #proj_sec .aligned {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.9em;
+  }
+
+  #pub_sec .two, #proj_sec .two {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+
+  #pub_sec .one img, #pub_sec .aligned img, #pub_sec .two img,
+  #proj_sec .one img, #proj_sec .aligned img, #proj_sec .two img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .papertitle { font-size: 17px; }
+
+  .paper { max-width: 100%; }
+
+  /* the one-line summary wraps on a phone, so 1.1 is too tight */
+  .tldr {
+    line-height: 1.4;
+    margin: 12px 0 0;
   }
 
   .site-footer td { text-align: left !important; }
 
-  .news-list { height: calc(7 * 2.5em); }
-
   .abstract-container { padding: 14px; }
+
+  .abstract { text-align: left; }
 
   .bibtex-container { padding: 12px; font-size: 12px; }
 }
 
 @media (max-width: 420px) {
-  .name { font-size: 27px; }
+  .name { font-size: 26px; }
 
   #sitenav a { font-size: 15px !important; }
+
+  #sitenav td { padding: 0.3em 0.5em !important; }
 }
