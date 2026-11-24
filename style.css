@@ -254,16 +254,13 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-/* Alternative research highlight style - more subtle */
+/* Research-interest keywords: bold with a soft highlighter stroke (not link-blue, wraps like text) */
 .research-subtle {
-  background: rgba(23, 114, 208, 0.1);
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: 600;
-  color: #1772d0;
-  border: 1px solid rgba(23, 114, 208, 0.2);
-  display: inline-block;
-  margin: 0 1px;
+  font-weight: 700;
+  color: inherit;
+  background: linear-gradient(transparent 60%, rgba(240, 146, 40, 0.40) 60%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 news-box {
